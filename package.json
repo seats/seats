@@ -1,0 +1,22 @@
+{
+  "name": "seats",
+  "version": "0.0.1",
+  "description": "seat management app in node (very early stages)",
+  "dependencies": {
+    "express": "~3.4.4",
+    "socket.io": "~0.9.16"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/demircancelebi/seats.git"
+  },
+  "keywords": [
+    "tickets",
+    "seats"
+  ],
+  "author": "Batuhan Icoz & Demircan Celebi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/demircancelebi/seats/issues"
+  }
+}
