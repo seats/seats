@@ -64,18 +64,19 @@ body {
 
 /* line 19, ../scss/screen.scss */
 .container {
+  position: relative;
   width: 960px;
   margin: 0 auto; }
 
-/* line 24, ../scss/screen.scss */
+/* line 25, ../scss/screen.scss */
 .row {
   clear: both; }
 
-/* line 28, ../scss/screen.scss */
+/* line 29, ../scss/screen.scss */
 .null {
   background: white; }
 
-/* line 32, ../scss/screen.scss */
+/* line 33, ../scss/screen.scss */
 .empty {
   background-color: #ffffbe;
   cursor: pointer; }
@@ -83,14 +84,14 @@ body {
   .empty:hover {
     background-color: #efefce; }
 
-/* line 37, ../scss/screen.scss */
+/* line 38, ../scss/screen.scss */
 .sold {
   background-color: #ff8282; }
   /* line 11, ../scss/screen.scss */
   .sold:hover {
     background-color: #e0a1a1; }
 
-/* line 41, ../scss/screen.scss */
+/* line 42, ../scss/screen.scss */
 .about-to-sold {
   background-color: #8bff8b;
   cursor: pointer; }
@@ -98,7 +99,7 @@ body {
   .about-to-sold:hover {
     background-color: #a8e2a8; }
 
-/* line 46, ../scss/screen.scss */
+/* line 47, ../scss/screen.scss */
 .about-to-loose {
   background-color: orange;
   cursor: pointer; }
@@ -106,7 +107,7 @@ body {
   .about-to-loose:hover {
     background-color: #bf9240; }
 
-/* line 50, ../scss/screen.scss */
+/* line 51, ../scss/screen.scss */
 li {
   cursor: pointer;
   width: 3.2%;
@@ -117,18 +118,18 @@ li {
   font-size: 12px;
   color: #333; }
 
-/* line 61, ../scss/screen.scss */
+/* line 62, ../scss/screen.scss */
 .sell, .loose {
   position: absolute;
   top: 20px;
   left: 47%;
   display: none; }
 
-/* line 68, ../scss/screen.scss */
+/* line 69, ../scss/screen.scss */
 .loose {
   top: 50px; }
 
-/* line 72, ../scss/screen.scss */
+/* line 73, ../scss/screen.scss */
 .stage {
   width: 100%;
   margin-top: 50px;
