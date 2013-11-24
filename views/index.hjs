@@ -1,4 +1,4 @@
-﻿<html>
+<html>
 	<head>
 		<title>GKM Oturma Planı</title>
 		<link rel="stylesheet" href="css/screen.css">
@@ -733,53 +733,12 @@
 			<li class="null"></li>
 			<li class="null"></li>
 		</ul>
-		<div class="stage">Sahne</div>
-		<button class="sell">Satıldı</button>
-		<button class="loose">İade</button>
+		<div class="stage">Stage</div>
+		<button class="sell">Sold</button>
+		<button class="loose">Return</button>
 	</div>
-	<script src="js/jquery.js"></script>
-	<script>
-		$(function() {
-			$.each($('li:not(.null,.sold)'), function(){
-				var $this = $(this);
-				var row = $this.parent('ul');
-				$(this).html(row.data("row")+$this.data("seat"));
-			});
-			$('.empty').on('click', function () {
-				var $this = $(this);
-				if($this.hasClass("empty")){
-					$(this).toggleClass("about-to-sold");
-					if($('.about-to-sold').length){
-						$('.sell').show();
-					}else{
-						$('.sell').hide();
-					}
-				}else if($this.hasClass("sold")){
-					$this.toggleClass('about-to-loose');
-					if($('.about-to-loose').length){
-						$('.loose').show();
-					}else{
-						$('.loose').hide();
-					}
-				}
-			});
-			$('.loose').on('click', function () {
-				$(this).hide();
-				$('.about-to-loose').each(function () {
-					var $this = $(this);
-					console.log($this.html());
-					$(this).removeClass().addClass("empty");
-				})
-			})
-			$('.sell').on('click', function () {
-				$(this).hide();
-				$('.about-to-sold').each(function () {
-					var $this = $(this);
-					console.log($this.html());
-					$this.removeClass().addClass('sold');
-				});
-			})
-		});
-	</script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="javascripts/app.js"></script>
+
 	</body>
 </html>
