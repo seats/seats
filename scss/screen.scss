@@ -1,0 +1,80 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+@mixin colorize($color) {
+    background-color: $color;
+
+    &:hover {
+        background-color: desaturate($color, 50%);
+    }
+}
+body{
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.container{
+	width: 960px;
+	margin: 0 auto;
+}
+
+.row{
+	clear:both;
+}
+
+.null{
+	background: white;
+}
+
+.empty{
+	@include colorize(rgb(255,255,190));
+	cursor: pointer;
+}
+
+.sold{
+	@include colorize(rgb(255,130,130));
+}
+
+.about-to-sold{
+	@include colorize(darken(#BEFFBE, 10%));
+	cursor: pointer;
+}
+
+.about-to-loose{
+	@include colorize(orange);
+	cursor: pointer;
+}
+li{
+	cursor: pointer;
+	width: 3.2%;
+	height: 20px;
+	line-height:20px;
+	float: left;
+	text-align:center;
+	font-size:12px;
+	color:#333;
+}
+
+.sell, .loose{
+	position:absolute;
+	top: 20px;
+	left: 47%;
+	display: none
+}
+
+.loose{
+	top: 50px;
+}
+
+.stage{
+	width: 100%;
+	margin-top: 50px;
+	display: block;
+	clear: both;
+	text-align: center;
+	color: rgb(255,130,130);
+	font-size:72px;
+}
