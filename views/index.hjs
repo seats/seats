@@ -1,4 +1,4 @@
-﻿<html>
+<html>
 	<head>
 		<title>GKM Oturma Planı</title>
 		<link rel="stylesheet" href="css/screen.css">
@@ -733,11 +733,11 @@
 			<li class="null"></li>
 			<li class="null"></li>
 		</ul>
-		<div class="stage">STAGE</div>
-		<button class="sell">Satıldı</button>
-		<button class="loose">İade</button>
+		<div class="stage">Stage</div>
+		<button class="sell">Sold</button>
+		<button class="loose">Return</button>
 	</div>
-	<script src="js/jquery.js"></script>
-	<script src="js/main.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="javascripts/app.js"></script>
 	</body>
 </html>

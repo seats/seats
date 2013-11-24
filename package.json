@@ -4,7 +4,11 @@
   "description": "seat management app in node (very early stages)",
   "dependencies": {
     "express": "~3.4.4",
-    "socket.io": "~0.9.16"
+    "socket.io": "~0.9.16",
+    "hjs": "*"
+  },
+  "scripts": {
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
