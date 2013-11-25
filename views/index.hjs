@@ -3,7 +3,7 @@
 		<title>GKM</title>
 		<link rel="stylesheet" href="/css/screen.css">
 		<script>
-			var seller = "{{ user.username }}";
+			window.seller = "{{ user.username }}";
 		</script>
 	</head>
 	<body>

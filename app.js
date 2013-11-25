@@ -8,6 +8,7 @@ var express = require('express'),
 	http = require('http'),
 	path = require('path'),
 	flash = require('connect-flash'),
+	MongoStore = require('connect-mongo')(express),
 	mongoose = require('mongoose'),
 	app = express(),
 	server = http.createServer(app),
@@ -23,6 +24,8 @@ var express = require('express'),
 		username: 'ok2',
 		password: '123456'
 	}];
+
+app.use(express.cookieParser(process.env.SECRET || 'thisissosecretevenidontknowit'));
 
 mongoose.connect('mongodb://localhost/gkm');
 var db = mongoose.connection;
@@ -105,12 +108,13 @@ app.use(express.logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded());
 app.use(express.methodOverride());
-app.use(express.cookieParser(process.env.SECRET || 'thisissosecretevenidontknowit'));
-//app.use(express.session());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.bodyParser());
 app.use(express.session({
-	secret: process.env.SECRET || 'thisissosecretevenidontknowit'
+	secret: process.env.SECRET || 'thisissosecretevenidontknowit',
+	store: new MongoStore({
+		db: 'gkm'
+	})
 }));
 app.use(flash());
 // Initialize Passport!  Also use passport.session() middleware, to support
@@ -169,7 +173,7 @@ function ensureAuthenticated(req, res, next) {
 	if (req.isAuthenticated()) {
 		return next();
 	}
-	res.redirect('/login')
+	res.redirect('/login');
 }
 
 server.listen(app.get('port'), function() {
@@ -195,33 +199,26 @@ io.sockets.on('connection', function(socket) {
 		//clear reservations
 	});
 
-	app.post('/sales', ensureAuthenticated, function(req, res) {
-
-		var saledata = {
-			category: req.body.category,
-			seat: req.body.seat,
-			seller: req.body.seller,
-			sold: req.body.sold
-		};
-
+	socket.on('updateseat', function(saledata) {
 		var _sale = new Sale(saledata);
 		_sale.save();
 
 		socket.broadcast.emit('updateseat', saledata);
-		res.send(true);
+	});
+
+	socket.on('deleteseat', function(seat) {
+		if (seat) {
+			Sale.findByIdAndRemove(seat);
+			socket.broadcast.emit('deleteseat', seat);
+		}
+	});
+
+	app.post('/sales', ensureAuthenticated, function(req, res) {
 
 	});
 
 	app.delete('/sales', ensureAuthenticated, function(req, res) {
-		if (req.body.seat) {
-			Sale.findByIdAndRemove(req.body.seat);
-			socket.broadcast.emit('deleteseat', req.body.seat);
-			res.send(true);
-		} else {
-			res.send(500, {
-				error: "NO SEAT NAME HAS BEEN GIVEN!"
-			});
-		}
+
 
 	});
 });
