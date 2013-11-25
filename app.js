@@ -8,12 +8,14 @@ var express = require('express'),
 	http = require('http'),
 	path = require('path'),
 	flash = require('connect-flash'),
-	MongoStore = require('connect-mongo')(express),
 	mongoose = require('mongoose'),
 	app = express(),
 	server = http.createServer(app),
 	io = require('socket.io').listen(server),
 	passport = require('passport'),
+	passportSocketIo = require("passport.socketio"),
+	MemoryStore = express.session.MemoryStore,
+	sessionStore = new MemoryStore(),
 	LocalStrategy = require('passport-local').Strategy,
 	admins = [{
 		id: 1,
@@ -110,15 +112,14 @@ app.use(express.urlencoded());
 app.use(express.methodOverride());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.bodyParser());
+
 app.use(express.session({
-	secret: process.env.SECRET || 'thisissosecretevenidontknowit',
-	store: new MongoStore({
-		db: 'gkm'
-	})
+	store: sessionStore,
+	secret: 'secret',
+	key: process.env.SECRET || 'thisissosecretevenidontknowit'
 }));
+
 app.use(flash());
-// Initialize Passport!  Also use passport.session() middleware, to support
-// persistent login sessions (recommended).
 app.use(passport.initialize());
 app.use(passport.session());
 // development only
@@ -192,6 +193,41 @@ function clearReservations() {
 
 clearReservations();
 setInterval(clearReservations, 60000);
+var general = io
+	.of('/sockets/general')
+	.on('connection', function(socket) {
+		socket.emit('a message', {
+			that: 'only',
+			'/chat': 'will get'
+		});
+		chat.emit('a message', {
+			everyone: 'in',
+			'/chat': 'will get'
+		});
+	});
+
+var admin = io
+	.of('/sockets/admin')
+	.authorization(passportSocketIo.authorize({
+		key: 'express.sid', //the cookie where express (or connect) stores its session id.
+		secret: process.env.SECRET || 'thisissosecretevenidontknowit', //the session secret to parse the cookie
+		store: sessionStore, //the session store that express uses
+		fail: function(data, accept) {
+			// console.log("failed");
+			// console.log(data);// *optional* callbacks on success or fail
+			accept(null, false); // second param takes boolean on whether or not to allow handshake
+		},
+		success: function(data, accept) {
+			//  console.log("success socket.io auth");
+			//   console.log(data);
+			accept(null, true);
+		}
+	}))
+	.on('connection', function(socket) {
+		socket.emit('item', {
+			news: 'item'
+		});
+	});
 
 io.sockets.on('connection', function(socket) {
 
@@ -213,18 +249,4 @@ io.sockets.on('connection', function(socket) {
 		}
 	});
 
-	app.post('/sales', ensureAuthenticated, function(req, res) {
-
-	});
-
-	app.delete('/sales', ensureAuthenticated, function(req, res) {
-
-
-	});
 });
-
-app.get('/_debug/_deleteAllSales',
-	function(req, res) {
-		var query = Sale.remove({});
-		query.exec();
-	});
