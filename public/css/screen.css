@@ -96,21 +96,22 @@ strong {
   [data-status="sold"]:hover {
     background-color: #e0a1a1; }
 
-/* line 47, ../scss/screen.scss */
-[data-category="student"] {
-  background-color: #ff6464;
-  cursor: pointer; }
-  /* line 11, ../scss/screen.scss */
-  [data-category="student"]:hover {
-    background-color: #d88b8b; }
-
-/* line 52, ../scss/screen.scss */
+/* line 46, ../scss/screen.scss */
 [data-category="bumk"] {
   background-color: #ffcaca;
   cursor: pointer; }
   /* line 11, ../scss/screen.scss */
   [data-category="bumk"]:hover {
     background-color: #f2d7d7; }
+
+/* line 51, ../scss/screen.scss */
+[data-category="student"] {
+  background-color: #ff6464;
+  cursor: pointer;
+  color: white; }
+  /* line 11, ../scss/screen.scss */
+  [data-category="student"]:hover {
+    background-color: #d88b8b; }
 
 /* line 57, ../scss/screen.scss */
 [data-category="normal"] {

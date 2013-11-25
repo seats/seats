@@ -740,11 +740,11 @@
 		{{#user}}
 			<div class="control-menu">
 				<div class="ticket-types">
-					<label for="bumk"><input type="radio" name="ticket-type" value="bumk" id="bumk"> BUMK (4TL)</label>
+					<label data-category="bumk" for="bumk"><input type="radio" name="ticket-type" value="bumk" id="bumk"> BUMK (4TL)</label>
 					<br>
-					<label for="student"><input type="radio" name="ticket-type" value="student" id="student"> Student (7TL)</label>
+					<label data-category="student" for="student"><input type="radio" name="ticket-type" value="student" id="student"> Student (7TL)</label>
 					<br>
-					<label for="normal"><input type="radio" name="ticket-type" value="normal" id="normal"> Normal (15TL)</label>
+					<label data-category="normal" for="normal"><input type="radio" name="ticket-type" value="normal" id="normal"> Normal (15TL)</label>
 				</div>
 					<br>
 				<button class="sell">Sold</button>

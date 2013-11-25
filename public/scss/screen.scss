@@ -43,15 +43,15 @@ strong{
 	@include colorize(rgb(255,130,130));
 }
 
+[data-category="bumk"] {
+	@include colorize(lighten(rgb(255,100,100), 20%));
+	cursor: pointer;
+}
 
 [data-category="student"] {
 	@include colorize(rgb(255,100,100));
 	cursor: pointer;
-}
-
-[data-category="bumk"] {
-	@include colorize(lighten(rgb(255,100,100), 20%));
-	cursor: pointer;
+	color: white;
 }
 
 [data-category="normal"] {
