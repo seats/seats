@@ -15,6 +15,21 @@ $(function() {
 				} else {
 					$('.sell').show().prop('disabled', true);
 				}
+
+				$.ajax({
+					type: "POST",
+					url: '/sell',
+					data: {
+						seat: $this.html(),
+						category: "unknown",
+						seller: seller,
+						sold: false
+					}
+				}).error(function(err) {
+					console.log(err);
+					alert('Error');
+				});
+
 			} else {
 				$('.sell').hide();
 			}
@@ -42,14 +57,15 @@ $(function() {
 		$(this).hide();
 		$('.about-to-sold').each(function() {
 			var $this = $(this);
-			
+
 			$.ajax({
 				type: "POST",
 				url: '/sell',
 				data: {
 					seat: $this.html(),
 					category: document.querySelector('input[name="ticket-type"]:checked').value,
-					seller: seller
+					seller: seller,
+					sold: true
 				}
 			}).error(function(err) {
 				console.log(err);
@@ -68,4 +84,14 @@ $(function() {
 			li.attr("data-status", status);
 		});
 	}
+});
+
+
+var socket = io.connect();
+socket.on('connect', function() {
+	//connected
+});
+
+socket.on('updateseat', function(saledata) {
+	console.log(saledata);
 });

@@ -142,20 +142,6 @@ app.get('/admin', ensureAuthenticated, function(req, res) { // This is for stats
 	});
 });
 
-app.post('/sell', ensureAuthenticated, function(req, res) {
-
-	var seat = new Sale({
-		category: req.body.category,
-		seat: req.body.seat,
-		seller: req.body.seller
-	});
-
-	seat.save();
-
-	res.send(true);
-	
-});
-
 app.get('/login', function(req, res) {
 	res.redirect('/');
 });
@@ -188,4 +174,26 @@ function ensureAuthenticated(req, res, next) {
 
 server.listen(app.get('port'), function() {
 	console.log('We are up @ port ' + app.get('port'));
+});
+
+
+io.sockets.on('connection', function(socket) {
+
+	app.post('/sell', ensureAuthenticated, function(req, res) {
+
+		var saledata = {
+			category: req.body.category,
+			seat: req.body.seat,
+			seller: req.body.seller,
+			sold: req.body.sold
+		};
+
+		var _sale = new Sale(saledata);
+		_sale.save();
+
+		socket.broadcast.emit('updateseat', saledata);
+		res.send(true);
+
+	});
+
 });
