@@ -40,12 +40,12 @@ body{
 	@include colorize(rgb(255,130,130));
 }
 
-.about-to-sold{
+[data-status="presold"] {
 	@include colorize(darken(#BEFFBE, 10%));
 	cursor: pointer;
 }
 
-.about-to-loose{
+[data-status="prereturn"] {
 	@include colorize(orange);
 	cursor: pointer;
 }

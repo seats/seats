@@ -1,21 +1,20 @@
 $(function() {
-	$.each($('li[data-status="empty"]'), function() {
+	$.each($('li:not([data-status="null"])'), function() {
 		var $this = $(this);
 		var row = $this.parent('ul');
 		$(this).html(row.data("row") + $this.data("seat"));
 	});
-	$('li[data-status="empty"]').on('click', function() {
+	$('li').on('click', function() {
 		var $this = $(this);
 		if ($this.attr("data-status") === "empty") {
-			$(this).toggleClass("about-to-sold");
-			if ($('.about-to-sold').length) {
+			$(this).attr("data-status","presold");
+			if ($('li[data-status="presold"]').length) {
 				$('.ticket-types').show();
 				if ($('.ticket-types input').is(':checked')) {
 					$('.sell').show();
 				} else {
 					$('.sell').show().prop('disabled', true);
 				}
-
 				$.ajax({
 					type: "POST",
 					url: '/sales',
@@ -34,20 +33,27 @@ $(function() {
 				$('.sell').hide();
 			}
 		} else if ($this.attr("data-status") === "sold") {
-			$this.toggleClass('about-to-loose');
-			if ($('.about-to-loose').length) {
+			$this.attr('data-status','prereturn');
+			if ($('li[data-status="prereturn"]').length) {
 				$('.loose').show();
 			} else {
 				$('.loose').hide();
 			}
 		}
+		else if($this.attr("data-status") === "presold")
+		{
+			$(this).attr("data-status","empty");
+		}
+		else if($this.attr("data-status") === "prereturn")
+		{
+			$(this).attr("data-status","sold");
+		}
 	});
 	$('.loose').on('click', function() {
 		$(this).hide();
-		$('.about-to-loose').each(function() {
+		$('li[data-status="prereturn"]').each(function() {
 			var $this = $(this);
 			console.log($this.html());
-			$(this).removeClass().addClass("empty");
 			$.ajax({
 				type: "DELETE",
 				url: '/sales',
@@ -58,6 +64,7 @@ $(function() {
 				console.log(err);
 				alert('Error');
 			});
+			$(this).attr("data-status","empty");
 		});
 	});
 	$('.ticket-types input').on('change', function() {
@@ -65,9 +72,8 @@ $(function() {
 	});
 	$('.sell').on('click', function() {
 		$(this).hide();
-		$('.about-to-sold').each(function() {
+		$('li[data-status="presold"]').each(function() {
 			var $this = $(this);
-
 			$.ajax({
 				type: "POST",
 				url: '/sales',
@@ -86,12 +92,13 @@ $(function() {
 		});
 	});
 
-	function markSeats(array, status) {
+	function markSeats(array) {
 		$.each(array, function(index, item) {
 			var li = $("li").filter(function() {
 				return $(this).html() === item;
 			});
-			li.attr("data-status", status);
+			li.attr("data-status", (item.sold) ? "sold" : "empty");
+			li.attr("data-category", item.category);
 		});
 	}
 });
