@@ -218,16 +218,12 @@ io.sockets.on('connection', function(socket) {
 	});
 
 	socket.on('deleteseat', function(seat) {
-		if (user) {
-			if (seat) {
-				var query = Sale.findOneAndRemove({
-					"seat": seat
-				});
-				query.exec();
-
-				socket.broadcast.emit('deleteseat', seat);
-			}
-
+		if (user || seat) {
+			var query = Sale.findOneAndRemove({
+				"seat": seat.seat
+			});
+			query.exec();
+			socket.broadcast.emit('deleteseat', seat);
 		}
 	});
 
