@@ -51,14 +51,16 @@ body{
 }
 li{
 	cursor: pointer;
-	width: 3.2%;
+	width: 3%;
 	height: 20px;
 	line-height:20px;
 	float: left;
 	text-align:center;
 	font-size:12px;
 	color:#333;
-	box-sizing:border-box;
+	&[data-status="null"]{
+		border:1px solid white;
+	}
 	&:not([data-status="null"]){
 		border:1px solid rgb(255,130,130);
 	}

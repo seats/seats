@@ -112,12 +112,11 @@ socket.on('updateseat', function(saledata) {
 	var li = $("li").filter(function() {
 		return $(this).html() == saledata.seat;
 	});
-	console.log(li);
-//	li.trigger("click");
+	li.trigger("click");
 });
 socket.on('deleteseat', function(seatname) {
 	var li = $("li").filter(function() {
 		return $(this).html() == seatname;
 	});
-//	li.trigger("click");
+	li.trigger("click");
 });
