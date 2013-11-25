@@ -761,6 +761,9 @@
 			<input type="submit" value="Submit"/>
 		</form>
 	{{/user}}
+	{{user}}
+	<h2>Hi, {{ user.username }}, to logout <a href="/logout">click here</a></h2>
+	{{/user}}
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="/socket.io/socket.io.js"></script>
