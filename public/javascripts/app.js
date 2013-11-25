@@ -18,7 +18,7 @@ $(function() {
 
 				$.ajax({
 					type: "POST",
-					url: '/sell',
+					url: '/sales',
 					data: {
 						seat: $this.html(),
 						category: "unknown",
@@ -48,6 +48,16 @@ $(function() {
 			var $this = $(this);
 			console.log($this.html());
 			$(this).removeClass().addClass("empty");
+			$.ajax({
+				type: "DELETE",
+				url: '/sales',
+				data: {
+					seat: $this.html()
+				}
+			}).error(function(err) {
+				console.log(err);
+				alert('Error');
+			});
 		});
 	});
 	$('.ticket-types input').on('change', function() {
@@ -60,7 +70,7 @@ $(function() {
 
 			$.ajax({
 				type: "POST",
-				url: '/sell',
+				url: '/sales',
 				data: {
 					seat: $this.html(),
 					category: document.querySelector('input[name="ticket-type"]:checked').value,
@@ -94,4 +104,7 @@ socket.on('connect', function() {
 
 socket.on('updateseat', function(saledata) {
 	console.log(saledata);
+});
+socket.on('deleteseat', function(seatname) {
+	console.log(seatname);
 });

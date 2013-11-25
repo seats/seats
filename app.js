@@ -146,12 +146,12 @@ app.get('/login', function(req, res) {
 	res.redirect('/');
 });
 
-app.get('/seats',
+app.get('/sales',
 	function(req, res) {
-		Sale.find({}, function(err, seats) {
+		Sale.find({}, function(err, sales) {
 			if (err) console.log(err);
 			res.send({
-				seats: seats
+				sales: sales
 			});
 		});
 	});
@@ -176,10 +176,15 @@ server.listen(app.get('port'), function() {
 	console.log('We are up @ port ' + app.get('port'));
 });
 
+function clearReservations() {
+	// runs every 60 sec and runs on init.
+}
+clearReservations();
+setInterval(clearReservations, 60 * 1000);
 
 io.sockets.on('connection', function(socket) {
 
-	app.post('/sell', ensureAuthenticated, function(req, res) {
+	app.post('/sales', ensureAuthenticated, function(req, res) {
 
 		var saledata = {
 			category: req.body.category,
@@ -196,4 +201,22 @@ io.sockets.on('connection', function(socket) {
 
 	});
 
+	app.delete('/sales', ensureAuthenticated, function(req, res) {
+		if (req.body.seat) {
+			Sale.findByIdAndRemove(req.body.seat);
+			socket.broadcast.emit('deleteseat', req.body.seat);
+			res.send(true);
+		} else {
+			res.send(500, {
+				error: "NO SEAT NAME HAS BEEN GIVEN!"
+			});
+		}
+
+	});
 });
+
+app.get('/_debug/_deleteAllSales',
+	function(req, res) {
+		var query = Sale.remove({});
+		query.exec();
+	});
