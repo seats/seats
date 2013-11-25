@@ -10,6 +10,7 @@ $(function() {
 			var $this = $(this);
 			if ($this.attr("data-status") === "empty") {
 				$(this).attr("data-status", "presold");
+				$(this).attr("data-seller", "me");
 				socket.emit('updateseat', {
 					seat: $this.html(),
 					category: "unknown",
@@ -77,7 +78,7 @@ $(function() {
 
 		$('.sell').on('click', function() {
 			$(this).hide();
-			$('li[data-status="presold"]:not([data-seller])').each(function() {
+			$('li[data-status="presold"][data-seller="me"]').each(function() {
 				var $this = $(this);
 
 				socket.emit('updateseat', {
@@ -112,7 +113,8 @@ $(function() {
 				return $(this).html() === seat;
 			});
 			li.attr("data-status", "empty");
-			li.attr("data-category", "");
+			li.removeAttr("data-category");
+			li.removeAttr("data-seller");
 		}
 	}
 
