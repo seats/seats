@@ -63,21 +63,25 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 12px; }
 
-/* line 20, ../scss/screen.scss */
+/* line 19, ../scss/screen.scss */
+strong {
+  font-weight: bold; }
+
+/* line 23, ../scss/screen.scss */
 .container {
   position: relative;
   width: 960px;
   margin: 0 auto; }
 
-/* line 26, ../scss/screen.scss */
+/* line 29, ../scss/screen.scss */
 .row {
   clear: both; }
 
-/* line 30, ../scss/screen.scss */
+/* line 33, ../scss/screen.scss */
 .null {
   background: white; }
 
-/* line 34, ../scss/screen.scss */
+/* line 37, ../scss/screen.scss */
 [data-status="empty"] {
   background-color: #ffffbe;
   cursor: pointer; }
@@ -85,14 +89,14 @@ body {
   [data-status="empty"]:hover {
     background-color: #efefce; }
 
-/* line 39, ../scss/screen.scss */
+/* line 42, ../scss/screen.scss */
 [data-status="sold"] {
   background-color: #ff8282; }
   /* line 11, ../scss/screen.scss */
   [data-status="sold"]:hover {
     background-color: #e0a1a1; }
 
-/* line 43, ../scss/screen.scss */
+/* line 46, ../scss/screen.scss */
 [data-status="presold"] {
   background-color: #8bff8b;
   cursor: pointer; }
@@ -100,7 +104,7 @@ body {
   [data-status="presold"]:hover {
     background-color: #a8e2a8; }
 
-/* line 48, ../scss/screen.scss */
+/* line 51, ../scss/screen.scss */
 [data-status="prereturn"] {
   background-color: orange;
   cursor: pointer; }
@@ -108,7 +112,7 @@ body {
   [data-status="prereturn"]:hover {
     background-color: #bf9240; }
 
-/* line 52, ../scss/screen.scss */
+/* line 55, ../scss/screen.scss */
 li {
   cursor: pointer;
   width: 3%;
@@ -118,32 +122,43 @@ li {
   text-align: center;
   font-size: 12px;
   color: #333; }
-  /* line 61, ../scss/screen.scss */
+  /* line 64, ../scss/screen.scss */
   li[data-status="null"] {
     border: 1px solid white; }
-  /* line 64, ../scss/screen.scss */
+  /* line 67, ../scss/screen.scss */
   li:not([data-status="null"]) {
     border: 1px solid #ff8282; }
 
-/* line 70, ../scss/screen.scss */
+/* line 73, ../scss/screen.scss */
 .control-menu {
   position: absolute;
   top: 20px;
   left: 45%; }
 
-/* line 76, ../scss/screen.scss */
+/* line 79, ../scss/screen.scss */
+.info-card {
+  position: absolute;
+  top: 197px;
+  left: 41.7%;
+  width: 134px;
+  height: 90px;
+  background: #efefef;
+  padding: 10px;
+  display: none; }
+
+/* line 90, ../scss/screen.scss */
 .sell, .loose {
   display: none; }
 
-/* line 80, ../scss/screen.scss */
+/* line 94, ../scss/screen.scss */
 .loose {
   top: 50px; }
 
-/* line 83, ../scss/screen.scss */
+/* line 97, ../scss/screen.scss */
 .ticket-types {
   display: none; }
 
-/* line 86, ../scss/screen.scss */
+/* line 100, ../scss/screen.scss */
 .stage {
   width: 100%;
   margin-top: 50px;

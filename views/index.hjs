@@ -753,6 +753,7 @@
 			</div>
 		{{/user}}
 	</div>
+	<div class="info-card"></div>
 
 	{{^user}}
 		{{#message}}

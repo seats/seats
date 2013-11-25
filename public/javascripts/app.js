@@ -15,7 +15,7 @@ $(function() {
 					$('.sell').show();
 =======
 	if(window.seller){
-		$('li').on('click', function() {
+		$('li:not([data-status="null"])').on('click', function() {
 
 			var $this = $(this);
 			if ($this.attr("data-status") === "empty") 
@@ -113,6 +113,28 @@ $(function() {
 			{
 				$(this).attr("data-status","sold");
 			}
+		});
+		$('li:not([data-status="null"])').on("mouseenter", function (e) {
+			$(".info-card").html(
+				[
+					"<strong>Koltuk: </strong>" + $(this).html(),
+					"<br>",
+					"<br>",
+					"<strong>Satış Tipi: </strong>" + "bümk (4 TL)",
+					"<br>",
+					"<br>",
+					"<strong>Satış Tarihi: </strong>" + "date",
+					"<br>",
+					"<br>",
+					"<strong>Satıcı: </strong>" + "seller"
+				].join("")).css({
+					"position" : "absolute",
+					"top" : e.pageY + 10,
+					"left" : e.pageX + 10
+				}).show();
+				console.log(e);
+		}).on("mouseleave", function (e) {
+			$(".info-card").hide();
 		});
 		$('.loose').on('click', function() {
 			$(this).hide();
