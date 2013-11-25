@@ -27,16 +27,14 @@ var express = require('express'),
 mongoose.connect('mongodb://localhost/gkm');
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'db connection error:'));
-db.once('open', function callback() {
 
-	var Sale = mongoose.model('sale', mongoose.Schema({
-		type: String,
-		sold: Boolean,
-		seller: String
-	}));
-
-});
-
+var Sale = mongoose.model('sale', mongoose.Schema({
+	category: String,
+	seat: String,
+	sold: { type: Boolean, default: false },
+	seller: { type: String, default: 'ok' },
+	created_at: { type: Date, default: Date.now }
+}));
 
 function findById(id, fn) {
 	var idx = id - 1;
@@ -117,7 +115,7 @@ if ('development' == app.get('env')) {
 app.use(app.router);
 
 
-app.get(' / ', function(req, res) {
+app.get('/', function(req, res) {
 	res.render('index', {
 		user: req.user,
 		message: req.flash('error')
@@ -138,6 +136,14 @@ app.get('/admin', ensureAuthenticated, function(req, res) { // This is for stats
 app.get('/login', function(req, res) {
 	res.redirect('/');
 });
+
+app.get('/seats',
+	function(req, res) {
+		Sale.find({}, function(err, seats) {
+			if (err) console.log(err);
+			res.send({ seats: seats });
+		});
+	});
 
 app.post('/login',
 	passport.authenticate('local', {
