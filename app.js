@@ -192,6 +192,10 @@ clearReservations();
 setInterval(clearReservations, 60000);
 
 io.sockets.on('connection', function(socket) {
+	Sale.find({}, function(err, sales) {
+		socket.emit('sales', sales);
+	});
+
 	socket.on('disconnect', function() {
 		//clear reservations
 	});

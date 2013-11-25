@@ -93,7 +93,7 @@ $(function() {
 		function markSeats(array) {
 			$.each(array, function(index, item) {
 				var li = $("li").filter(function() {
-					return $(this).html() === item;
+					return $(this).html() === item.seat;
 				});
 				li.attr("data-status", (item.sold) ? "sold" : "empty");
 				li.attr("data-category", item.category);
@@ -123,6 +123,11 @@ $(function() {
 
 	socket.on('updateseat', function(saledata) {
 		markSeat(saledata)
+	});
+
+	socket.on('sales', function(sales){
+		console.log(sales);
+		markSeats(sales);
 	});
 	
 	socket.on('deleteseat', function(seatname) {
