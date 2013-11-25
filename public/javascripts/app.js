@@ -9,7 +9,12 @@ $(function() {
 		if ($this.hasClass("empty")) {
 			$(this).toggleClass("about-to-sold");
 			if ($('.about-to-sold').length) {
-				$('.sell').show();
+				$('.ticket-types').show();
+				if($('.ticket-types input').is(':checked')){
+					$('.sell').show();
+				}else{
+					$('.sell').show().prop('disabled',true);				
+				}
 			} else {
 				$('.sell').hide();
 			}
@@ -29,7 +34,10 @@ $(function() {
 			console.log($this.html());
 			$(this).removeClass().addClass("empty");
 		})
-	})
+	});
+	$('.ticket-types input').on('change', function () {
+		$('.sell').prop('disabled',false);
+	});
 	$('.sell').on('click', function() {
 		$(this).hide();
 		$('.about-to-sold').each(function() {

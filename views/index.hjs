@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>GKM Oturma Planı</title>
+		<title>GKM</title>
 		<link rel="stylesheet" href="css/screen.css">
 	</head>
 	<body>
@@ -734,8 +734,19 @@
 			<li class="null"></li>
 		</ul>
 		<div class="stage">Stage</div>
-		<button class="sell">Sold</button>
-		<button class="loose">Return</button>
+		<div class="control-menu">
+			<div class="ticket-types">
+				<label for="bumk"><input type="radio" name="ticket-type" value="bumk" id="bumk"> BUMK</label>
+				<br>
+				<label for="student"><input type="radio" name="ticket-type" value="student" id="student"> Student</label>
+				<br>
+				<label for="normal"><input type="radio" name="ticket-type" value="normal" id="normal"> Normal</label>
+			</div>
+				<br>
+			<button class="sell">Sold</button>
+			<br>
+			<button class="loose">Return</button>
+		</div>
 	</div>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="javascripts/app.js"></script>

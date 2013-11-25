@@ -14,6 +14,7 @@
 }
 body{
 	font-family: Helvetica, Arial, sans-serif;
+	font-size:12px;
 }
 
 .container{
@@ -59,17 +60,22 @@ li{
 	color:#333;
 }
 
-.sell, .loose{
+.control-menu{
 	position:absolute;
 	top: 20px;
 	left: 47%;
+}
+
+.sell, .loose{
 	display: none
 }
 
 .loose{
 	top: 50px;
 }
-
+.ticket-types{
+	display: none
+}
 .stage{
 	width: 100%;
 	margin-top: 50px;
