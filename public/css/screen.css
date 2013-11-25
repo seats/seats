@@ -93,19 +93,19 @@ body {
     background-color: #e0a1a1; }
 
 /* line 43, ../scss/screen.scss */
-.about-to-sold {
+[data-status="presold"] {
   background-color: #8bff8b;
   cursor: pointer; }
   /* line 11, ../scss/screen.scss */
-  .about-to-sold:hover {
+  [data-status="presold"]:hover {
     background-color: #a8e2a8; }
 
 /* line 48, ../scss/screen.scss */
-.about-to-loose {
+[data-status="prereturn"] {
   background-color: orange;
   cursor: pointer; }
   /* line 11, ../scss/screen.scss */
-  .about-to-loose:hover {
+  [data-status="prereturn"]:hover {
     background-color: #bf9240; }
 
 /* line 52, ../scss/screen.scss */
