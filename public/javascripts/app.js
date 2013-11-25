@@ -47,13 +47,13 @@ $(function() {
 					"<strong>Koltuk: </strong>" + $(this).html(),
 					"<br>",
 					"<br>",
-					"<strong>Satış Tipi: </strong>" + "bümk (4 TL)",
+					"<strong>Satış Tipi: </strong>" + $(this).attr('data-category'),
 					"<br>",
 					"<br>",
-					"<strong>Satış Tarihi: </strong>" + "date",
+					"<strong>Satış Tarihi: </strong>" + $(this).attr('data-date'),
 					"<br>",
 					"<br>",
-					"<strong>Satıcı: </strong>" + seller
+					"<strong>Satıcı: </strong>" + $(this).attr('data-seller')
 				].join("")).css({
 					"position" : "absolute",
 					"top" : e.pageY + 10,

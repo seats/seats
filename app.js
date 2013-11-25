@@ -197,11 +197,19 @@ io.sockets.on('connection', function(socket) {
 	});
 
 	socket.on('disconnect', function() {
+		if (user) {}
 		//clear reservations
 	});
 
 	socket.on('updateseat', function(saledata) {
 		if (user) {
+
+			var query = Sale.findOneAndRemove({
+				"seat": seat,
+				sold: false
+			});
+			query.exec();
+
 			var _sale = new Sale(saledata);
 			_sale.save();
 
@@ -212,7 +220,11 @@ io.sockets.on('connection', function(socket) {
 	socket.on('deleteseat', function(seat) {
 		if (user) {
 			if (seat) {
-				Sale.findByIdAndRemove(seat);
+				var query = Sale.findOneAndRemove({
+					"seat": seat
+				});
+				query.exec();
+
 				socket.broadcast.emit('deleteseat', seat);
 			}
 
