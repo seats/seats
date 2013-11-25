@@ -87,12 +87,18 @@ li{
 }
 
 
-.control-menu{
+.control-menu, .stats-menu{
 	position:absolute;
 	top: 20px;
 	left: 45%;
 }
-
+.stats-menu{
+	top: 310px;
+	left:46%;
+}
+.stat{
+	padding: 5px;
+}
 .info-card{
 	position: absolute;
 	top: 197px;

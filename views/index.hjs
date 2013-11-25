@@ -751,6 +751,18 @@
 				<br>
 				<button class="loose">Return</button>
 			</div>
+			<div class="stats-menu">
+				<div data-category="bumk" class="stat">
+					13 - 52 TL
+				</div>
+				<div data-category="student" class="stat">
+					10 - 70 TL
+				</div>
+				<div data-category="normal" class="stat">
+					3 - 45 TL
+				</div>
+				<div class="stat"><br> 26 - 167 TL</div>
+			</div>
 		{{/user}}
 	</div>
 	<div class="info-card"></div>

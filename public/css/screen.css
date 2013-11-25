@@ -155,12 +155,21 @@ li {
     border: 1px solid #ff8282; }
 
 /* line 90, ../scss/screen.scss */
-.control-menu {
+.control-menu, .stats-menu {
   position: absolute;
   top: 20px;
   left: 45%; }
 
-/* line 96, ../scss/screen.scss */
+/* line 95, ../scss/screen.scss */
+.stats-menu {
+  top: 310px;
+  left: 46%; }
+
+/* line 99, ../scss/screen.scss */
+.stat {
+  padding: 5px; }
+
+/* line 102, ../scss/screen.scss */
 .info-card {
   position: absolute;
   top: 197px;
@@ -171,19 +180,19 @@ li {
   padding: 10px;
   display: none; }
 
-/* line 107, ../scss/screen.scss */
+/* line 113, ../scss/screen.scss */
 .sell, .loose {
   display: none; }
 
-/* line 111, ../scss/screen.scss */
+/* line 117, ../scss/screen.scss */
 .loose {
   top: 50px; }
 
-/* line 114, ../scss/screen.scss */
+/* line 120, ../scss/screen.scss */
 .ticket-types {
   display: none; }
 
-/* line 117, ../scss/screen.scss */
+/* line 123, ../scss/screen.scss */
 .stage {
   width: 100%;
   margin-top: 50px;
