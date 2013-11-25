@@ -117,27 +117,31 @@ li {
   float: left;
   text-align: center;
   font-size: 12px;
-  color: #333; }
+  color: #333;
+  box-sizing: border-box; }
+  /* line 62, ../scss/screen.scss */
+  li:not([data-status="null"]) {
+    border: 1px solid #ff8282; }
 
-/* line 63, ../scss/screen.scss */
+/* line 68, ../scss/screen.scss */
 .control-menu {
   position: absolute;
   top: 20px;
   left: 45%; }
 
-/* line 69, ../scss/screen.scss */
+/* line 74, ../scss/screen.scss */
 .sell, .loose {
   display: none; }
 
-/* line 73, ../scss/screen.scss */
+/* line 78, ../scss/screen.scss */
 .loose {
   top: 50px; }
 
-/* line 76, ../scss/screen.scss */
+/* line 81, ../scss/screen.scss */
 .ticket-types {
   display: none; }
 
-/* line 79, ../scss/screen.scss */
+/* line 84, ../scss/screen.scss */
 .stage {
   width: 100%;
   margin-top: 50px;

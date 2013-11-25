@@ -58,7 +58,12 @@ li{
 	text-align:center;
 	font-size:12px;
 	color:#333;
+	box-sizing:border-box;
+	&:not([data-status="null"]){
+		border:1px solid rgb(255,130,130);
+	}
 }
+
 
 .control-menu{
 	position:absolute;
