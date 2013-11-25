@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<title>GKM</title>
-		<link rel="stylesheet" href="css/screen.css">
+		<link rel="stylesheet" href="/css/screen.css">
 	</head>
 	<body>
 	<div class="container">
@@ -749,6 +749,7 @@
 		</div>
 	</div>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="javascripts/app.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="/javascripts/app.js"></script>
 	</body>
 </html>
