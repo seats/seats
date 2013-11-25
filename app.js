@@ -27,7 +27,7 @@ var express = require('express'),
 
 app.use(express.cookieParser(process.env.SECRET || 'thisissosecretevenidontknowit'));
 
-mongoose.connect('mongodb://localhost/gkm');
+mongoose.connect('mongodb://localhost/gkm2');
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'db connection error:'));
 
