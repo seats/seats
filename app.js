@@ -205,7 +205,7 @@ io.sockets.on('connection', function(socket) {
 		if (user) {
 
 			var query = Sale.findOneAndRemove({
-				"seat": seat,
+				"seat": saledata.seat,
 				sold: false
 			});
 			query.exec();
