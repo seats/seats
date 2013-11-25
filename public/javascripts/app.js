@@ -10,10 +10,10 @@ $(function() {
 			$(this).toggleClass("about-to-sold");
 			if ($('.about-to-sold').length) {
 				$('.ticket-types').show();
-				if($('.ticket-types input').is(':checked')){
+				if ($('.ticket-types input').is(':checked')) {
 					$('.sell').show();
-				}else{
-					$('.sell').show().prop('disabled',true);				
+				} else {
+					$('.sell').show().prop('disabled', true);
 				}
 			} else {
 				$('.sell').hide();
@@ -35,20 +35,33 @@ $(function() {
 			$(this).removeClass().addClass("empty");
 		});
 	});
-	$('.ticket-types input').on('change', function () {
-		$('.sell').prop('disabled',false);
+	$('.ticket-types input').on('change', function() {
+		$('.sell').prop('disabled', false);
 	});
 	$('.sell').on('click', function() {
 		$(this).hide();
 		$('.about-to-sold').each(function() {
 			var $this = $(this);
-			console.log($this.html());
-			$this.attr('data-status','sold');
+			$.ajax({
+				type: "POST",
+				url: '/sell',
+				data: {
+					seat: $this.html(),
+					category: document.querySelector('input[name="ticket-type"]:checked').value,
+					seller: seller
+				}
+			}).error(function(err) {
+				console.log(err);
+				alert('Error');
+			});
+
+			$this.attr('data-status', 'sold');
 		});
 	});
-	function markSeats(array,status){
-		$.each(array, function (index,item) {
-			var li = $("li").filter(function () {
+
+	function markSeats(array, status) {
+		$.each(array, function(index, item) {
+			var li = $("li").filter(function() {
 				return $(this).html() === item;
 			});
 			li.attr("data-status", status);

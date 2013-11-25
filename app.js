@@ -31,9 +31,18 @@ db.on('error', console.error.bind(console, 'db connection error:'));
 var Sale = mongoose.model('sale', mongoose.Schema({
 	category: String,
 	seat: String,
-	sold: { type: Boolean, default: false },
-	seller: { type: String, default: 'ok' },
-	created_at: { type: Date, default: Date.now }
+	sold: {
+		type: Boolean,
+		default: false
+	},
+	seller: {
+		type: String,
+		default: 'ok'
+	},
+	created_at: {
+		type: Date,
+		default: Date.now
+	}
 }));
 
 function findById(id, fn) {
@@ -133,6 +142,18 @@ app.get('/admin', ensureAuthenticated, function(req, res) { // This is for stats
 	});
 });
 
+app.post('/sell', ensureAuthenticated, function(req, res) {
+
+	var seat = new Sale({
+		category: req.body.category,
+		seat: req.body.seat,
+		seller: req.body.seller
+	});
+
+	seat.save();
+	
+});
+
 app.get('/login', function(req, res) {
 	res.redirect('/');
 });
@@ -141,7 +162,9 @@ app.get('/seats',
 	function(req, res) {
 		Sale.find({}, function(err, seats) {
 			if (err) console.log(err);
-			res.send({ seats: seats });
+			res.send({
+				seats: seats
+			});
 		});
 	});
 

@@ -2,6 +2,9 @@
 	<head>
 		<title>GKM</title>
 		<link rel="stylesheet" href="/css/screen.css">
+		<script>
+			var seller = "{{ user.username }}";
+		</script>
 	</head>
 	<body>
 	<div class="container">
@@ -734,19 +737,21 @@
 			<li data-status="null"></li>
 		</ul>
 		<div class="stage">Stage</div>
-		<div class="control-menu">
-			<div class="ticket-types">
-				<label for="bumk"><input type="radio" name="ticket-type" value="bumk" id="bumk"> BUMK</label>
+		{{#user}}
+			<div class="control-menu">
+				<div class="ticket-types">
+					<label for="bumk"><input type="radio" name="ticket-type" value="bumk" id="bumk"> BUMK</label>
+					<br>
+					<label for="student"><input type="radio" name="ticket-type" value="student" id="student"> Student</label>
+					<br>
+					<label for="normal"><input type="radio" name="ticket-type" value="normal" id="normal"> Normal</label>
+				</div>
+					<br>
+				<button class="sell">Sold</button>
 				<br>
-				<label for="student"><input type="radio" name="ticket-type" value="student" id="student"> Student</label>
-				<br>
-				<label for="normal"><input type="radio" name="ticket-type" value="normal" id="normal"> Normal</label>
+				<button class="loose">Return</button>
 			</div>
-				<br>
-			<button class="sell">Sold</button>
-			<br>
-			<button class="loose">Return</button>
-		</div>
+		{{/user}}
 	</div>
 
 	{{^user}}
