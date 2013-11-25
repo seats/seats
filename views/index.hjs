@@ -750,16 +750,16 @@
 				<button class="loose">Return</button>
 			</div>
 			<div class="stats-menu">
-				<div data-category="bumk" class="stat">
-					13 - 52 TL
+				<div id="stats-bumk" class="stat">
+					
 				</div>
-				<div data-category="student" class="stat">
-					10 - 70 TL
+				<div id="stats-student" class="stat">
+					
 				</div>
-				<div data-category="normal" class="stat">
-					3 - 45 TL
+				<div id="stats-normal" class="stat">
+					
 				</div>
-				<div class="stat"><br> 26 - 167 TL</div>
+				<div id="stats-total" class="stat"></div>
 			</div>
 		{{/user}}
 	</div>

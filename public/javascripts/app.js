@@ -135,7 +135,14 @@ $(function() {
 	});
 
 	socket.on('initialdata', function(data){
-		console.log(data.stats);
+		var incomes = {};
+		incomes.bumk = data.stats.bumk * 4;
+		incomes.normal = data.stats.normal * 7;
+		incomes.student = data.stats.student * 15;
+		$('#stats-bumk').html(data.stats.bumk + ' - ' + incomes.bumk + ' TL');
+		$('#stats-normal').html(data.stats.normal + ' - ' + incomes.normal + ' TL');
+		$('#stats-student').html(data.stats.student + ' - ' + incomes.student + ' TL');
+		$('#stats-total').html(data.stats.total + ' - ' + incomes.bumk + incomes.student + incomes.normal + ' TL');
 		markSeats(data.sales);
 	});
 	

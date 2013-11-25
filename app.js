@@ -199,9 +199,9 @@ io.sockets.on('connection', function(socket) {
 		stats.normal = 0;
 		stats.student = 0;
 		for (var i = 0, len = sales.length; i < len; i++) {
-			if (sales[i].category === 'normal') stats.normal = stats.normal + 1;
-			if (sales[i].category === 'bump') stats.bump = stats.bump + 1;
-			if (sales[i].category === 'student') stats.student = stats.student + 1;
+			if (sales[i].category === 'normal' && sales[i].sold) stats.normal = stats.normal + 1;
+			if (sales[i].category === 'bumk' && sales[i].sold) stats.bumk = stats.bumk + 1;
+			if (sales[i].category === 'student' && sales[i].sold) stats.student = stats.student + 1;
 		}
 
 		socket.emit('initialdata', {
