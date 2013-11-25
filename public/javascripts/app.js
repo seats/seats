@@ -77,7 +77,7 @@ $(function() {
 
 		$('.sell').on('click', function() {
 			$(this).hide();
-			$('li[data-status="presold"]').each(function() {
+			$('li[data-status="presold"]:not([data-seller])').each(function() {
 				var $this = $(this);
 
 				socket.emit('updateseat', {
@@ -105,6 +105,7 @@ $(function() {
 			});
 			li.attr("data-status", (saleObj.sold) ? "sold" : "presold");
 			li.attr("data-category", saleObj.category);
+			li.attr("data-seller", saleObj.seller);
 		}
 		function deleteSeat(seat){
 			var li = $("li").filter(function() {
