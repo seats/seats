@@ -43,6 +43,22 @@ strong{
 	@include colorize(rgb(255,130,130));
 }
 
+
+[data-category="student"] {
+	@include colorize(rgb(255,100,100));
+	cursor: pointer;
+}
+
+[data-category="bumk"] {
+	@include colorize(lighten(rgb(255,100,100), 20%));
+	cursor: pointer;
+}
+
+[data-category="normal"] {
+	@include colorize(darken(rgb(255,40,40), 0%));
+	cursor: pointer;
+}
+
 [data-status="presold"] {
 	@include colorize(darken(#BEFFBE, 10%));
 	cursor: pointer;
@@ -52,6 +68,7 @@ strong{
 	@include colorize(orange);
 	cursor: pointer;
 }
+
 li{
 	cursor: pointer;
 	width: 3%;

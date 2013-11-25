@@ -82,14 +82,15 @@ $(function() {
 			$(this).hide();
 			$('li[data-status="presold"][data-seller="me"]').each(function() {
 				var $this = $(this);
-
+				var category = document.querySelector('input[name="ticket-type"]:checked').value;
 				socket.emit('updateseat', {
 					seat: $this.html(),
-					category: document.querySelector('input[name="ticket-type"]:checked').value,
+					category: category,
 					seller: seller,
 					sold: true
 				});
 				$(this).attr("data-status", "sold");				
+				$(this).attr("data-category", category);				
 			});		
 		});
 
