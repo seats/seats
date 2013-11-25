@@ -8,6 +8,7 @@ var express = require('express'),
 	http = require('http'),
 	path = require('path'),
 	flash = require('connect-flash'),
+	mongoose = require('mongoose'),
 	app = express(),
 	server = http.createServer(app),
 	io = require('socket.io').listen(server),
@@ -23,12 +24,26 @@ var express = require('express'),
 		password: '123456'
 	}];
 
+mongoose.connect('mongodb://localhost/gkm');
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'db connection error:'));
+db.once('open', function callback() {
+
+	var Sale = mongoose.model('sale', mongoose.Schema({
+		type: String,
+		sold: Boolean,
+		seller: String
+	}));
+
+});
+
+
 function findById(id, fn) {
 	var idx = id - 1;
 	if (admins[idx]) {
 		fn(null, admins[idx]);
 	} else {
-		fn(new Error('Admin #' + id + ' does not exist'));
+		fn(new Error('Admin #' + id + ' does not exist '));
 	}
 }
 
@@ -102,7 +117,7 @@ if ('development' == app.get('env')) {
 app.use(app.router);
 
 
-app.get('/', function(req, res) {
+app.get(' / ', function(req, res) {
 	res.render('index', {
 		user: req.user,
 		message: req.flash('error')
@@ -139,7 +154,6 @@ function ensureAuthenticated(req, res, next) {
 	}
 	res.redirect('/login')
 }
-
 
 server.listen(app.get('port'), function() {
 	console.log('We are up @ port ' + app.get('port'));
