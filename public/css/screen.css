@@ -78,18 +78,18 @@ body {
   background: white; }
 
 /* line 34, ../scss/screen.scss */
-.empty {
+[data-status="empty"] {
   background-color: #ffffbe;
   cursor: pointer; }
   /* line 11, ../scss/screen.scss */
-  .empty:hover {
+  [data-status="empty"]:hover {
     background-color: #efefce; }
 
 /* line 39, ../scss/screen.scss */
-.sold {
+[data-status="sold"] {
   background-color: #ff8282; }
   /* line 11, ../scss/screen.scss */
-  .sold:hover {
+  [data-status="sold"]:hover {
     background-color: #e0a1a1; }
 
 /* line 43, ../scss/screen.scss */

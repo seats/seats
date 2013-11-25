@@ -31,12 +31,12 @@ body{
 	background: white;
 }
 
-.empty{
+[data-status="empty"] {
 	@include colorize(rgb(255,255,190));
 	cursor: pointer;
 }
 
-.sold{
+[data-status="sold"] {
 	@include colorize(rgb(255,130,130));
 }
 

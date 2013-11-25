@@ -6,732 +6,732 @@
 	<body>
 	<div class="container">
 		<ul class="row" data-row="T">
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="empty" data-seat="1"></li>
-			<li class="empty" data-seat="3"></li>
-			<li class="empty" data-seat="5"></li>
-			<li class="empty" data-seat="7"></li>
-			<li class="empty" data-seat="9"></li>
-			<li class="empty" data-seat="11"></li>
-			<li class="empty" data-seat="13"></li>
-			<li class="empty" data-seat="15"></li>
-			<li class="empty" data-seat="17"></li>
-			<li class="empty" data-seat="19"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="empty" data-seat="2"></li>
-			<li class="empty" data-seat="4"></li>
-			<li class="empty" data-seat="6"></li>
-			<li class="empty" data-seat="8"></li>
-			<li class="empty" data-seat="10"></li>
-			<li class="empty" data-seat="12"></li>
-			<li class="empty" data-seat="14"></li>
-			<li class="empty" data-seat="16"></li>
-			<li class="empty" data-seat="18"></li>
-			<li class="empty" data-seat="20"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="empty" data-seat="1"></li>
+			<li data-status="empty" data-seat="3"></li>
+			<li data-status="empty" data-seat="5"></li>
+			<li data-status="empty" data-seat="7"></li>
+			<li data-status="empty" data-seat="9"></li>
+			<li data-status="empty" data-seat="11"></li>
+			<li data-status="empty" data-seat="13"></li>
+			<li data-status="empty" data-seat="15"></li>
+			<li data-status="empty" data-seat="17"></li>
+			<li data-status="empty" data-seat="19"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="empty" data-seat="2"></li>
+			<li data-status="empty" data-seat="4"></li>
+			<li data-status="empty" data-seat="6"></li>
+			<li data-status="empty" data-seat="8"></li>
+			<li data-status="empty" data-seat="10"></li>
+			<li data-status="empty" data-seat="12"></li>
+			<li data-status="empty" data-seat="14"></li>
+			<li data-status="empty" data-seat="16"></li>
+			<li data-status="empty" data-seat="18"></li>
+			<li data-status="empty" data-seat="20"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
 		</ul>
 		<ul class="row" data-row="S">
-			<li class="empty" data-seat="1"></li>
-			<li class="empty" data-seat="3"></li>
-			<li class="empty" data-seat="5"></li>
-			<li class="empty" data-seat="7"></li>
-			<li class="empty" data-seat="9"></li>
-			<li class="empty" data-seat="11"></li>
-			<li class="empty" data-seat="13"></li>
-			<li class="empty" data-seat="15"></li>
-			<li class="empty" data-seat="17"></li>
-			<li class="empty" data-seat="19"></li>
-			<li class="empty" data-seat="21"></li>
-			<li class="empty" data-seat="23"></li>
-			<li class="empty" data-seat="25"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="empty" data-seat="2"></li>
-			<li class="empty" data-seat="4"></li>
-			<li class="empty" data-seat="6"></li>
-			<li class="empty" data-seat="8"></li>
-			<li class="empty" data-seat="10"></li>
-			<li class="empty" data-seat="12"></li>
-			<li class="empty" data-seat="14"></li>
-			<li class="empty" data-seat="16"></li>
-			<li class="empty" data-seat="18"></li>
-			<li class="empty" data-seat="20"></li>
-			<li class="empty" data-seat="22"></li>
-			<li class="empty" data-seat="24"></li>
-			<li class="empty" data-seat="26"></li>
+			<li data-status="empty" data-seat="1"></li>
+			<li data-status="empty" data-seat="3"></li>
+			<li data-status="empty" data-seat="5"></li>
+			<li data-status="empty" data-seat="7"></li>
+			<li data-status="empty" data-seat="9"></li>
+			<li data-status="empty" data-seat="11"></li>
+			<li data-status="empty" data-seat="13"></li>
+			<li data-status="empty" data-seat="15"></li>
+			<li data-status="empty" data-seat="17"></li>
+			<li data-status="empty" data-seat="19"></li>
+			<li data-status="empty" data-seat="21"></li>
+			<li data-status="empty" data-seat="23"></li>
+			<li data-status="empty" data-seat="25"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="empty" data-seat="2"></li>
+			<li data-status="empty" data-seat="4"></li>
+			<li data-status="empty" data-seat="6"></li>
+			<li data-status="empty" data-seat="8"></li>
+			<li data-status="empty" data-seat="10"></li>
+			<li data-status="empty" data-seat="12"></li>
+			<li data-status="empty" data-seat="14"></li>
+			<li data-status="empty" data-seat="16"></li>
+			<li data-status="empty" data-seat="18"></li>
+			<li data-status="empty" data-seat="20"></li>
+			<li data-status="empty" data-seat="22"></li>
+			<li data-status="empty" data-seat="24"></li>
+			<li data-status="empty" data-seat="26"></li>
 		</ul>
 		<ul class="row" data-row="R">
-			<li class="empty" data-seat="1"></li>
-			<li class="empty" data-seat="3"></li>
-			<li class="empty" data-seat="5"></li>
-			<li class="empty" data-seat="7"></li>
-			<li class="empty" data-seat="9"></li>
-			<li class="empty" data-seat="11"></li>
-			<li class="empty" data-seat="13"></li>
-			<li class="empty" data-seat="15"></li>
-			<li class="empty" data-seat="17"></li>
-			<li class="empty" data-seat="19"></li>
-			<li class="empty" data-seat="21"></li>
-			<li class="empty" data-seat="23"></li>
-			<li class="empty" data-seat="25"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="empty" data-seat="2"></li>
-			<li class="empty" data-seat="4"></li>
-			<li class="empty" data-seat="6"></li>
-			<li class="empty" data-seat="8"></li>
-			<li class="empty" data-seat="10"></li>
-			<li class="empty" data-seat="12"></li>
-			<li class="empty" data-seat="14"></li>
-			<li class="empty" data-seat="16"></li>
-			<li class="empty" data-seat="18"></li>
-			<li class="empty" data-seat="20"></li>
-			<li class="empty" data-seat="22"></li>
-			<li class="empty" data-seat="24"></li>
-			<li class="empty" data-seat="26"></li>
+			<li data-status="empty" data-seat="1"></li>
+			<li data-status="empty" data-seat="3"></li>
+			<li data-status="empty" data-seat="5"></li>
+			<li data-status="empty" data-seat="7"></li>
+			<li data-status="empty" data-seat="9"></li>
+			<li data-status="empty" data-seat="11"></li>
+			<li data-status="empty" data-seat="13"></li>
+			<li data-status="empty" data-seat="15"></li>
+			<li data-status="empty" data-seat="17"></li>
+			<li data-status="empty" data-seat="19"></li>
+			<li data-status="empty" data-seat="21"></li>
+			<li data-status="empty" data-seat="23"></li>
+			<li data-status="empty" data-seat="25"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="empty" data-seat="2"></li>
+			<li data-status="empty" data-seat="4"></li>
+			<li data-status="empty" data-seat="6"></li>
+			<li data-status="empty" data-seat="8"></li>
+			<li data-status="empty" data-seat="10"></li>
+			<li data-status="empty" data-seat="12"></li>
+			<li data-status="empty" data-seat="14"></li>
+			<li data-status="empty" data-seat="16"></li>
+			<li data-status="empty" data-seat="18"></li>
+			<li data-status="empty" data-seat="20"></li>
+			<li data-status="empty" data-seat="22"></li>
+			<li data-status="empty" data-seat="24"></li>
+			<li data-status="empty" data-seat="26"></li>
 		</ul>
 		<ul class="row" data-row="P">
-			<li class="empty" data-seat="1"></li>
-			<li class="empty" data-seat="3"></li>
-			<li class="empty" data-seat="5"></li>
-			<li class="empty" data-seat="7"></li>
-			<li class="empty" data-seat="9"></li>
-			<li class="empty" data-seat="11"></li>
-			<li class="empty" data-seat="13"></li>
-			<li class="empty" data-seat="15"></li>
-			<li class="empty" data-seat="17"></li>
-			<li class="empty" data-seat="19"></li>
-			<li class="empty" data-seat="21"></li>
-			<li class="empty" data-seat="23"></li>
-			<li class="empty" data-seat="25"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="empty" data-seat="2"></li>
-			<li class="empty" data-seat="4"></li>
-			<li class="empty" data-seat="6"></li>
-			<li class="empty" data-seat="8"></li>
-			<li class="empty" data-seat="10"></li>
-			<li class="empty" data-seat="12"></li>
-			<li class="empty" data-seat="14"></li>
-			<li class="empty" data-seat="16"></li>
-			<li class="empty" data-seat="18"></li>
-			<li class="empty" data-seat="20"></li>
-			<li class="empty" data-seat="22"></li>
-			<li class="empty" data-seat="24"></li>
-			<li class="empty" data-seat="26"></li>
+			<li data-status="empty" data-seat="1"></li>
+			<li data-status="empty" data-seat="3"></li>
+			<li data-status="empty" data-seat="5"></li>
+			<li data-status="empty" data-seat="7"></li>
+			<li data-status="empty" data-seat="9"></li>
+			<li data-status="empty" data-seat="11"></li>
+			<li data-status="empty" data-seat="13"></li>
+			<li data-status="empty" data-seat="15"></li>
+			<li data-status="empty" data-seat="17"></li>
+			<li data-status="empty" data-seat="19"></li>
+			<li data-status="empty" data-seat="21"></li>
+			<li data-status="empty" data-seat="23"></li>
+			<li data-status="empty" data-seat="25"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="empty" data-seat="2"></li>
+			<li data-status="empty" data-seat="4"></li>
+			<li data-status="empty" data-seat="6"></li>
+			<li data-status="empty" data-seat="8"></li>
+			<li data-status="empty" data-seat="10"></li>
+			<li data-status="empty" data-seat="12"></li>
+			<li data-status="empty" data-seat="14"></li>
+			<li data-status="empty" data-seat="16"></li>
+			<li data-status="empty" data-seat="18"></li>
+			<li data-status="empty" data-seat="20"></li>
+			<li data-status="empty" data-seat="22"></li>
+			<li data-status="empty" data-seat="24"></li>
+			<li data-status="empty" data-seat="26"></li>
 		</ul>
 		<ul class="row" data-row="O">
-			<li class="empty" data-seat="1"></li>
-			<li class="empty" data-seat="3"></li>
-			<li class="empty" data-seat="5"></li>
-			<li class="empty" data-seat="7"></li>
-			<li class="empty" data-seat="9"></li>
-			<li class="empty" data-seat="11"></li>
-			<li class="empty" data-seat="13"></li>
-			<li class="empty" data-seat="15"></li>
-			<li class="empty" data-seat="17"></li>
-			<li class="empty" data-seat="19"></li>
-			<li class="empty" data-seat="21"></li>
-			<li class="empty" data-seat="23"></li>
-			<li class="empty" data-seat="25"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="empty" data-seat="2"></li>
-			<li class="empty" data-seat="4"></li>
-			<li class="empty" data-seat="6"></li>
-			<li class="empty" data-seat="8"></li>
-			<li class="empty" data-seat="10"></li>
-			<li class="empty" data-seat="12"></li>
-			<li class="empty" data-seat="14"></li>
-			<li class="empty" data-seat="16"></li>
-			<li class="empty" data-seat="18"></li>
-			<li class="empty" data-seat="20"></li>
-			<li class="empty" data-seat="22"></li>
-			<li class="empty" data-seat="24"></li>
-			<li class="empty" data-seat="26"></li>
+			<li data-status="empty" data-seat="1"></li>
+			<li data-status="empty" data-seat="3"></li>
+			<li data-status="empty" data-seat="5"></li>
+			<li data-status="empty" data-seat="7"></li>
+			<li data-status="empty" data-seat="9"></li>
+			<li data-status="empty" data-seat="11"></li>
+			<li data-status="empty" data-seat="13"></li>
+			<li data-status="empty" data-seat="15"></li>
+			<li data-status="empty" data-seat="17"></li>
+			<li data-status="empty" data-seat="19"></li>
+			<li data-status="empty" data-seat="21"></li>
+			<li data-status="empty" data-seat="23"></li>
+			<li data-status="empty" data-seat="25"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="empty" data-seat="2"></li>
+			<li data-status="empty" data-seat="4"></li>
+			<li data-status="empty" data-seat="6"></li>
+			<li data-status="empty" data-seat="8"></li>
+			<li data-status="empty" data-seat="10"></li>
+			<li data-status="empty" data-seat="12"></li>
+			<li data-status="empty" data-seat="14"></li>
+			<li data-status="empty" data-seat="16"></li>
+			<li data-status="empty" data-seat="18"></li>
+			<li data-status="empty" data-seat="20"></li>
+			<li data-status="empty" data-seat="22"></li>
+			<li data-status="empty" data-seat="24"></li>
+			<li data-status="empty" data-seat="26"></li>
 		</ul>
 		<ul class="row" data-row="N">
-			<li class="empty" data-seat="1"></li>
-			<li class="empty" data-seat="3"></li>
-			<li class="empty" data-seat="5"></li>
-			<li class="empty" data-seat="7"></li>
-			<li class="empty" data-seat="9"></li>
-			<li class="empty" data-seat="11"></li>
-			<li class="empty" data-seat="13"></li>
-			<li class="empty" data-seat="15"></li>
-			<li class="empty" data-seat="17"></li>
-			<li class="empty" data-seat="19"></li>
-			<li class="empty" data-seat="21"></li>
-			<li class="empty" data-seat="23"></li>
-			<li class="empty" data-seat="25"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="empty" data-seat="2"></li>
-			<li class="empty" data-seat="4"></li>
-			<li class="empty" data-seat="6"></li>
-			<li class="empty" data-seat="8"></li>
-			<li class="empty" data-seat="10"></li>
-			<li class="empty" data-seat="12"></li>
-			<li class="empty" data-seat="14"></li>
-			<li class="empty" data-seat="16"></li>
-			<li class="empty" data-seat="18"></li>
-			<li class="empty" data-seat="20"></li>
-			<li class="empty" data-seat="22"></li>
-			<li class="empty" data-seat="24"></li>
-			<li class="empty" data-seat="26"></li>
+			<li data-status="empty" data-seat="1"></li>
+			<li data-status="empty" data-seat="3"></li>
+			<li data-status="empty" data-seat="5"></li>
+			<li data-status="empty" data-seat="7"></li>
+			<li data-status="empty" data-seat="9"></li>
+			<li data-status="empty" data-seat="11"></li>
+			<li data-status="empty" data-seat="13"></li>
+			<li data-status="empty" data-seat="15"></li>
+			<li data-status="empty" data-seat="17"></li>
+			<li data-status="empty" data-seat="19"></li>
+			<li data-status="empty" data-seat="21"></li>
+			<li data-status="empty" data-seat="23"></li>
+			<li data-status="empty" data-seat="25"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="empty" data-seat="2"></li>
+			<li data-status="empty" data-seat="4"></li>
+			<li data-status="empty" data-seat="6"></li>
+			<li data-status="empty" data-seat="8"></li>
+			<li data-status="empty" data-seat="10"></li>
+			<li data-status="empty" data-seat="12"></li>
+			<li data-status="empty" data-seat="14"></li>
+			<li data-status="empty" data-seat="16"></li>
+			<li data-status="empty" data-seat="18"></li>
+			<li data-status="empty" data-seat="20"></li>
+			<li data-status="empty" data-seat="22"></li>
+			<li data-status="empty" data-seat="24"></li>
+			<li data-status="empty" data-seat="26"></li>
 		</ul>
 		<ul class="row" data-row="M">
-			<li class="empty" data-seat="1"></li>
-			<li class="empty" data-seat="3"></li>
-			<li class="empty" data-seat="5"></li>
-			<li class="empty" data-seat="7"></li>
-			<li class="empty" data-seat="9"></li>
-			<li class="empty" data-seat="11"></li>
-			<li class="empty" data-seat="13"></li>
-			<li class="empty" data-seat="15"></li>
-			<li class="empty" data-seat="17"></li>
-			<li class="empty" data-seat="19"></li>
-			<li class="empty" data-seat="21"></li>
-			<li class="empty" data-seat="23"></li>
-			<li class="empty" data-seat="25"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="empty" data-seat="2"></li>
-			<li class="empty" data-seat="4"></li>
-			<li class="empty" data-seat="6"></li>
-			<li class="empty" data-seat="8"></li>
-			<li class="empty" data-seat="10"></li>
-			<li class="empty" data-seat="12"></li>
-			<li class="empty" data-seat="14"></li>
-			<li class="empty" data-seat="16"></li>
-			<li class="empty" data-seat="18"></li>
-			<li class="empty" data-seat="20"></li>
-			<li class="empty" data-seat="22"></li>
-			<li class="empty" data-seat="24"></li>
-			<li class="empty" data-seat="26"></li>
+			<li data-status="empty" data-seat="1"></li>
+			<li data-status="empty" data-seat="3"></li>
+			<li data-status="empty" data-seat="5"></li>
+			<li data-status="empty" data-seat="7"></li>
+			<li data-status="empty" data-seat="9"></li>
+			<li data-status="empty" data-seat="11"></li>
+			<li data-status="empty" data-seat="13"></li>
+			<li data-status="empty" data-seat="15"></li>
+			<li data-status="empty" data-seat="17"></li>
+			<li data-status="empty" data-seat="19"></li>
+			<li data-status="empty" data-seat="21"></li>
+			<li data-status="empty" data-seat="23"></li>
+			<li data-status="empty" data-seat="25"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="empty" data-seat="2"></li>
+			<li data-status="empty" data-seat="4"></li>
+			<li data-status="empty" data-seat="6"></li>
+			<li data-status="empty" data-seat="8"></li>
+			<li data-status="empty" data-seat="10"></li>
+			<li data-status="empty" data-seat="12"></li>
+			<li data-status="empty" data-seat="14"></li>
+			<li data-status="empty" data-seat="16"></li>
+			<li data-status="empty" data-seat="18"></li>
+			<li data-status="empty" data-seat="20"></li>
+			<li data-status="empty" data-seat="22"></li>
+			<li data-status="empty" data-seat="24"></li>
+			<li data-status="empty" data-seat="26"></li>
 		</ul>
 		<ul class="row" data-row="L">
-			<li class="empty" data-seat="1"></li>
-			<li class="empty" data-seat="3"></li>
-			<li class="empty" data-seat="5"></li>
-			<li class="empty" data-seat="7"></li>
-			<li class="empty" data-seat="9"></li>
-			<li class="empty" data-seat="11"></li>
-			<li class="empty" data-seat="13"></li>
-			<li class="empty" data-seat="15"></li>
-			<li class="empty" data-seat="17"></li>
-			<li class="empty" data-seat="19"></li>
-			<li class="empty" data-seat="21"></li>
-			<li class="empty" data-seat="23"></li>
-			<li class="empty" data-seat="25"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="empty" data-seat="2"></li>
-			<li class="empty" data-seat="4"></li>
-			<li class="empty" data-seat="6"></li>
-			<li class="empty" data-seat="8"></li>
-			<li class="empty" data-seat="10"></li>
-			<li class="empty" data-seat="12"></li>
-			<li class="empty" data-seat="14"></li>
-			<li class="empty" data-seat="16"></li>
-			<li class="empty" data-seat="18"></li>
-			<li class="empty" data-seat="20"></li>
-			<li class="empty" data-seat="22"></li>
-			<li class="empty" data-seat="24"></li>
-			<li class="empty" data-seat="26"></li>
+			<li data-status="empty" data-seat="1"></li>
+			<li data-status="empty" data-seat="3"></li>
+			<li data-status="empty" data-seat="5"></li>
+			<li data-status="empty" data-seat="7"></li>
+			<li data-status="empty" data-seat="9"></li>
+			<li data-status="empty" data-seat="11"></li>
+			<li data-status="empty" data-seat="13"></li>
+			<li data-status="empty" data-seat="15"></li>
+			<li data-status="empty" data-seat="17"></li>
+			<li data-status="empty" data-seat="19"></li>
+			<li data-status="empty" data-seat="21"></li>
+			<li data-status="empty" data-seat="23"></li>
+			<li data-status="empty" data-seat="25"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="empty" data-seat="2"></li>
+			<li data-status="empty" data-seat="4"></li>
+			<li data-status="empty" data-seat="6"></li>
+			<li data-status="empty" data-seat="8"></li>
+			<li data-status="empty" data-seat="10"></li>
+			<li data-status="empty" data-seat="12"></li>
+			<li data-status="empty" data-seat="14"></li>
+			<li data-status="empty" data-seat="16"></li>
+			<li data-status="empty" data-seat="18"></li>
+			<li data-status="empty" data-seat="20"></li>
+			<li data-status="empty" data-seat="22"></li>
+			<li data-status="empty" data-seat="24"></li>
+			<li data-status="empty" data-seat="26"></li>
 		</ul>
 		<ul class="row" data-row="K">
-			<li class="empty" data-seat="1"></li>
-			<li class="empty" data-seat="3"></li>
-			<li class="empty" data-seat="5"></li>
-			<li class="empty" data-seat="7"></li>
-			<li class="empty" data-seat="9"></li>
-			<li class="empty" data-seat="11"></li>
-			<li class="empty" data-seat="13"></li>
-			<li class="empty" data-seat="15"></li>
-			<li class="empty" data-seat="17"></li>
-			<li class="empty" data-seat="19"></li>
-			<li class="empty" data-seat="21"></li>
-			<li class="empty" data-seat="23"></li>
-			<li class="empty" data-seat="25"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="empty" data-seat="2"></li>
-			<li class="empty" data-seat="4"></li>
-			<li class="empty" data-seat="6"></li>
-			<li class="empty" data-seat="8"></li>
-			<li class="empty" data-seat="10"></li>
-			<li class="empty" data-seat="12"></li>
-			<li class="empty" data-seat="14"></li>
-			<li class="empty" data-seat="16"></li>
-			<li class="empty" data-seat="18"></li>
-			<li class="empty" data-seat="20"></li>
-			<li class="empty" data-seat="22"></li>
-			<li class="empty" data-seat="24"></li>
-			<li class="empty" data-seat="26"></li>
+			<li data-status="empty" data-seat="1"></li>
+			<li data-status="empty" data-seat="3"></li>
+			<li data-status="empty" data-seat="5"></li>
+			<li data-status="empty" data-seat="7"></li>
+			<li data-status="empty" data-seat="9"></li>
+			<li data-status="empty" data-seat="11"></li>
+			<li data-status="empty" data-seat="13"></li>
+			<li data-status="empty" data-seat="15"></li>
+			<li data-status="empty" data-seat="17"></li>
+			<li data-status="empty" data-seat="19"></li>
+			<li data-status="empty" data-seat="21"></li>
+			<li data-status="empty" data-seat="23"></li>
+			<li data-status="empty" data-seat="25"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="empty" data-seat="2"></li>
+			<li data-status="empty" data-seat="4"></li>
+			<li data-status="empty" data-seat="6"></li>
+			<li data-status="empty" data-seat="8"></li>
+			<li data-status="empty" data-seat="10"></li>
+			<li data-status="empty" data-seat="12"></li>
+			<li data-status="empty" data-seat="14"></li>
+			<li data-status="empty" data-seat="16"></li>
+			<li data-status="empty" data-seat="18"></li>
+			<li data-status="empty" data-seat="20"></li>
+			<li data-status="empty" data-seat="22"></li>
+			<li data-status="empty" data-seat="24"></li>
+			<li data-status="empty" data-seat="26"></li>
 		</ul>
 		<ul class="row" data-row="J">
-			<li class="empty" data-seat="1"></li>
-			<li class="empty" data-seat="3"></li>
-			<li class="empty" data-seat="5"></li>
-			<li class="empty" data-seat="7"></li>
-			<li class="empty" data-seat="9"></li>
-			<li class="empty" data-seat="11"></li>
-			<li class="empty" data-seat="13"></li>
-			<li class="empty" data-seat="15"></li>
-			<li class="empty" data-seat="17"></li>
-			<li class="empty" data-seat="19"></li>
-			<li class="empty" data-seat="21"></li>
-			<li class="empty" data-seat="23"></li>
-			<li class="empty" data-seat="25"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="empty" data-seat="2"></li>
-			<li class="empty" data-seat="4"></li>
-			<li class="empty" data-seat="6"></li>
-			<li class="empty" data-seat="8"></li>
-			<li class="empty" data-seat="10"></li>
-			<li class="empty" data-seat="12"></li>
-			<li class="empty" data-seat="14"></li>
-			<li class="empty" data-seat="16"></li>
-			<li class="empty" data-seat="18"></li>
-			<li class="empty" data-seat="20"></li>
-			<li class="empty" data-seat="22"></li>
-			<li class="empty" data-seat="24"></li>
-			<li class="empty" data-seat="26"></li>
+			<li data-status="empty" data-seat="1"></li>
+			<li data-status="empty" data-seat="3"></li>
+			<li data-status="empty" data-seat="5"></li>
+			<li data-status="empty" data-seat="7"></li>
+			<li data-status="empty" data-seat="9"></li>
+			<li data-status="empty" data-seat="11"></li>
+			<li data-status="empty" data-seat="13"></li>
+			<li data-status="empty" data-seat="15"></li>
+			<li data-status="empty" data-seat="17"></li>
+			<li data-status="empty" data-seat="19"></li>
+			<li data-status="empty" data-seat="21"></li>
+			<li data-status="empty" data-seat="23"></li>
+			<li data-status="empty" data-seat="25"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="empty" data-seat="2"></li>
+			<li data-status="empty" data-seat="4"></li>
+			<li data-status="empty" data-seat="6"></li>
+			<li data-status="empty" data-seat="8"></li>
+			<li data-status="empty" data-seat="10"></li>
+			<li data-status="empty" data-seat="12"></li>
+			<li data-status="empty" data-seat="14"></li>
+			<li data-status="empty" data-seat="16"></li>
+			<li data-status="empty" data-seat="18"></li>
+			<li data-status="empty" data-seat="20"></li>
+			<li data-status="empty" data-seat="22"></li>
+			<li data-status="empty" data-seat="24"></li>
+			<li data-status="empty" data-seat="26"></li>
 		</ul>
 		<ul class="row" data-row="I">
-			<li class="empty" data-seat="1"></li>
-			<li class="empty" data-seat="3"></li>
-			<li class="empty" data-seat="5"></li>
-			<li class="empty" data-seat="7"></li>
-			<li class="empty" data-seat="9"></li>
-			<li class="empty" data-seat="11"></li>
-			<li class="empty" data-seat="13"></li>
-			<li class="empty" data-seat="15"></li>
-			<li class="empty" data-seat="17"></li>
-			<li class="empty" data-seat="19"></li>
-			<li class="empty" data-seat="21"></li>
-			<li class="empty" data-seat="23"></li>
-			<li class="empty" data-seat="25"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="empty" data-seat="2"></li>
-			<li class="empty" data-seat="4"></li>
-			<li class="empty" data-seat="6"></li>
-			<li class="empty" data-seat="8"></li>
-			<li class="empty" data-seat="10"></li>
-			<li class="empty" data-seat="12"></li>
-			<li class="empty" data-seat="14"></li>
-			<li class="empty" data-seat="16"></li>
-			<li class="empty" data-seat="18"></li>
-			<li class="empty" data-seat="20"></li>
-			<li class="empty" data-seat="22"></li>
-			<li class="empty" data-seat="24"></li>
-			<li class="empty" data-seat="26"></li>
+			<li data-status="empty" data-seat="1"></li>
+			<li data-status="empty" data-seat="3"></li>
+			<li data-status="empty" data-seat="5"></li>
+			<li data-status="empty" data-seat="7"></li>
+			<li data-status="empty" data-seat="9"></li>
+			<li data-status="empty" data-seat="11"></li>
+			<li data-status="empty" data-seat="13"></li>
+			<li data-status="empty" data-seat="15"></li>
+			<li data-status="empty" data-seat="17"></li>
+			<li data-status="empty" data-seat="19"></li>
+			<li data-status="empty" data-seat="21"></li>
+			<li data-status="empty" data-seat="23"></li>
+			<li data-status="empty" data-seat="25"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="empty" data-seat="2"></li>
+			<li data-status="empty" data-seat="4"></li>
+			<li data-status="empty" data-seat="6"></li>
+			<li data-status="empty" data-seat="8"></li>
+			<li data-status="empty" data-seat="10"></li>
+			<li data-status="empty" data-seat="12"></li>
+			<li data-status="empty" data-seat="14"></li>
+			<li data-status="empty" data-seat="16"></li>
+			<li data-status="empty" data-seat="18"></li>
+			<li data-status="empty" data-seat="20"></li>
+			<li data-status="empty" data-seat="22"></li>
+			<li data-status="empty" data-seat="24"></li>
+			<li data-status="empty" data-seat="26"></li>
 		</ul>
 
 		<ul class="row">
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
 		</ul>
 		<ul class="row">
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
 		</ul>
 		<ul class="row">
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
 		</ul>
 
 		<ul class="row" data-row="H">
-			<li class="empty" data-seat="1"></li>
-			<li class="empty" data-seat="3"></li>
-			<li class="empty" data-seat="5"></li>
-			<li class="empty" data-seat="7"></li>
-			<li class="empty" data-seat="9"></li>
-			<li class="empty" data-seat="11"></li>
-			<li class="empty" data-seat="13"></li>
-			<li class="empty" data-seat="15"></li>
-			<li class="empty" data-seat="17"></li>
-			<li class="empty" data-seat="19"></li>
-			<li class="empty" data-seat="21"></li>
-			<li class="empty" data-seat="23"></li>
-			<li class="empty" data-seat="25"></li>
-			<li class="empty" data-seat="27"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="empty" data-seat="2"></li>
-			<li class="empty" data-seat="4"></li>
-			<li class="empty" data-seat="6"></li>
-			<li class="empty" data-seat="8"></li>
-			<li class="empty" data-seat="10"></li>
-			<li class="empty" data-seat="12"></li>
-			<li class="empty" data-seat="14"></li>
-			<li class="empty" data-seat="16"></li>
-			<li class="empty" data-seat="18"></li>
-			<li class="empty" data-seat="20"></li>
-			<li class="empty" data-seat="22"></li>
-			<li class="empty" data-seat="24"></li>
-			<li class="empty" data-seat="26"></li>
-			<li class="empty" data-seat="28"></li>
+			<li data-status="empty" data-seat="1"></li>
+			<li data-status="empty" data-seat="3"></li>
+			<li data-status="empty" data-seat="5"></li>
+			<li data-status="empty" data-seat="7"></li>
+			<li data-status="empty" data-seat="9"></li>
+			<li data-status="empty" data-seat="11"></li>
+			<li data-status="empty" data-seat="13"></li>
+			<li data-status="empty" data-seat="15"></li>
+			<li data-status="empty" data-seat="17"></li>
+			<li data-status="empty" data-seat="19"></li>
+			<li data-status="empty" data-seat="21"></li>
+			<li data-status="empty" data-seat="23"></li>
+			<li data-status="empty" data-seat="25"></li>
+			<li data-status="empty" data-seat="27"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="empty" data-seat="2"></li>
+			<li data-status="empty" data-seat="4"></li>
+			<li data-status="empty" data-seat="6"></li>
+			<li data-status="empty" data-seat="8"></li>
+			<li data-status="empty" data-seat="10"></li>
+			<li data-status="empty" data-seat="12"></li>
+			<li data-status="empty" data-seat="14"></li>
+			<li data-status="empty" data-seat="16"></li>
+			<li data-status="empty" data-seat="18"></li>
+			<li data-status="empty" data-seat="20"></li>
+			<li data-status="empty" data-seat="22"></li>
+			<li data-status="empty" data-seat="24"></li>
+			<li data-status="empty" data-seat="26"></li>
+			<li data-status="empty" data-seat="28"></li>
 		</ul>
 		<ul class="row" data-row="G">
-			<li class="empty" data-seat="1"></li>
-			<li class="empty" data-seat="3"></li>
-			<li class="empty" data-seat="5"></li>
-			<li class="empty" data-seat="7"></li>
-			<li class="empty" data-seat="9"></li>
-			<li class="empty" data-seat="11"></li>
-			<li class="empty" data-seat="13"></li>
-			<li class="empty" data-seat="15"></li>
-			<li class="empty" data-seat="17"></li>
-			<li class="empty" data-seat="19"></li>
-			<li class="empty" data-seat="21"></li>
-			<li class="empty" data-seat="23"></li>
-			<li class="empty" data-seat="25"></li>
-			<li class="empty" data-seat="27"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="empty" data-seat="2"></li>
-			<li class="empty" data-seat="4"></li>
-			<li class="empty" data-seat="6"></li>
-			<li class="empty" data-seat="8"></li>
-			<li class="empty" data-seat="10"></li>
-			<li class="empty" data-seat="12"></li>
-			<li class="empty" data-seat="14"></li>
-			<li class="empty" data-seat="16"></li>
-			<li class="empty" data-seat="18"></li>
-			<li class="empty" data-seat="20"></li>
-			<li class="empty" data-seat="22"></li>
-			<li class="empty" data-seat="24"></li>
-			<li class="empty" data-seat="26"></li>
-			<li class="empty" data-seat="28"></li>
+			<li data-status="empty" data-seat="1"></li>
+			<li data-status="empty" data-seat="3"></li>
+			<li data-status="empty" data-seat="5"></li>
+			<li data-status="empty" data-seat="7"></li>
+			<li data-status="empty" data-seat="9"></li>
+			<li data-status="empty" data-seat="11"></li>
+			<li data-status="empty" data-seat="13"></li>
+			<li data-status="empty" data-seat="15"></li>
+			<li data-status="empty" data-seat="17"></li>
+			<li data-status="empty" data-seat="19"></li>
+			<li data-status="empty" data-seat="21"></li>
+			<li data-status="empty" data-seat="23"></li>
+			<li data-status="empty" data-seat="25"></li>
+			<li data-status="empty" data-seat="27"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="empty" data-seat="2"></li>
+			<li data-status="empty" data-seat="4"></li>
+			<li data-status="empty" data-seat="6"></li>
+			<li data-status="empty" data-seat="8"></li>
+			<li data-status="empty" data-seat="10"></li>
+			<li data-status="empty" data-seat="12"></li>
+			<li data-status="empty" data-seat="14"></li>
+			<li data-status="empty" data-seat="16"></li>
+			<li data-status="empty" data-seat="18"></li>
+			<li data-status="empty" data-seat="20"></li>
+			<li data-status="empty" data-seat="22"></li>
+			<li data-status="empty" data-seat="24"></li>
+			<li data-status="empty" data-seat="26"></li>
+			<li data-status="empty" data-seat="28"></li>
 		</ul>
 		<ul class="row" data-row="F">
-			<li class="empty" data-seat="1"></li>
-			<li class="empty" data-seat="3"></li>
-			<li class="empty" data-seat="5"></li>
-			<li class="empty" data-seat="7"></li>
-			<li class="empty" data-seat="9"></li>
-			<li class="empty" data-seat="11"></li>
-			<li class="empty" data-seat="13"></li>
-			<li class="empty" data-seat="15"></li>
-			<li class="empty" data-seat="17"></li>
-			<li class="empty" data-seat="19"></li>
-			<li class="empty" data-seat="21"></li>
-			<li class="empty" data-seat="23"></li>
-			<li class="empty" data-seat="25"></li>
-			<li class="empty" data-seat="27"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="empty" data-seat="2"></li>
-			<li class="empty" data-seat="4"></li>
-			<li class="empty" data-seat="6"></li>
-			<li class="empty" data-seat="8"></li>
-			<li class="empty" data-seat="10"></li>
-			<li class="empty" data-seat="12"></li>
-			<li class="empty" data-seat="14"></li>
-			<li class="empty" data-seat="16"></li>
-			<li class="empty" data-seat="18"></li>
-			<li class="empty" data-seat="20"></li>
-			<li class="empty" data-seat="22"></li>
-			<li class="empty" data-seat="24"></li>
-			<li class="empty" data-seat="26"></li>
-			<li class="empty" data-seat="28"></li>
+			<li data-status="empty" data-seat="1"></li>
+			<li data-status="empty" data-seat="3"></li>
+			<li data-status="empty" data-seat="5"></li>
+			<li data-status="empty" data-seat="7"></li>
+			<li data-status="empty" data-seat="9"></li>
+			<li data-status="empty" data-seat="11"></li>
+			<li data-status="empty" data-seat="13"></li>
+			<li data-status="empty" data-seat="15"></li>
+			<li data-status="empty" data-seat="17"></li>
+			<li data-status="empty" data-seat="19"></li>
+			<li data-status="empty" data-seat="21"></li>
+			<li data-status="empty" data-seat="23"></li>
+			<li data-status="empty" data-seat="25"></li>
+			<li data-status="empty" data-seat="27"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="empty" data-seat="2"></li>
+			<li data-status="empty" data-seat="4"></li>
+			<li data-status="empty" data-seat="6"></li>
+			<li data-status="empty" data-seat="8"></li>
+			<li data-status="empty" data-seat="10"></li>
+			<li data-status="empty" data-seat="12"></li>
+			<li data-status="empty" data-seat="14"></li>
+			<li data-status="empty" data-seat="16"></li>
+			<li data-status="empty" data-seat="18"></li>
+			<li data-status="empty" data-seat="20"></li>
+			<li data-status="empty" data-seat="22"></li>
+			<li data-status="empty" data-seat="24"></li>
+			<li data-status="empty" data-seat="26"></li>
+			<li data-status="empty" data-seat="28"></li>
 		</ul>
 		<ul class="row" data-row="E">
-			<li class="empty" data-seat="1"></li>
-			<li class="empty" data-seat="3"></li>
-			<li class="empty" data-seat="5"></li>
-			<li class="empty" data-seat="7"></li>
-			<li class="empty" data-seat="9"></li>
-			<li class="empty" data-seat="11"></li>
-			<li class="empty" data-seat="13"></li>
-			<li class="empty" data-seat="15"></li>
-			<li class="empty" data-seat="17"></li>
-			<li class="empty" data-seat="19"></li>
-			<li class="empty" data-seat="21"></li>
-			<li class="empty" data-seat="23"></li>
-			<li class="empty" data-seat="25"></li>
-			<li class="empty" data-seat="27"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="empty" data-seat="2"></li>
-			<li class="empty" data-seat="4"></li>
-			<li class="empty" data-seat="6"></li>
-			<li class="empty" data-seat="8"></li>
-			<li class="empty" data-seat="10"></li>
-			<li class="empty" data-seat="12"></li>
-			<li class="empty" data-seat="14"></li>
-			<li class="empty" data-seat="16"></li>
-			<li class="empty" data-seat="18"></li>
-			<li class="empty" data-seat="20"></li>
-			<li class="empty" data-seat="22"></li>
-			<li class="empty" data-seat="24"></li>
-			<li class="empty" data-seat="26"></li>
-			<li class="empty" data-seat="28"></li>
+			<li data-status="empty" data-seat="1"></li>
+			<li data-status="empty" data-seat="3"></li>
+			<li data-status="empty" data-seat="5"></li>
+			<li data-status="empty" data-seat="7"></li>
+			<li data-status="empty" data-seat="9"></li>
+			<li data-status="empty" data-seat="11"></li>
+			<li data-status="empty" data-seat="13"></li>
+			<li data-status="empty" data-seat="15"></li>
+			<li data-status="empty" data-seat="17"></li>
+			<li data-status="empty" data-seat="19"></li>
+			<li data-status="empty" data-seat="21"></li>
+			<li data-status="empty" data-seat="23"></li>
+			<li data-status="empty" data-seat="25"></li>
+			<li data-status="empty" data-seat="27"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="empty" data-seat="2"></li>
+			<li data-status="empty" data-seat="4"></li>
+			<li data-status="empty" data-seat="6"></li>
+			<li data-status="empty" data-seat="8"></li>
+			<li data-status="empty" data-seat="10"></li>
+			<li data-status="empty" data-seat="12"></li>
+			<li data-status="empty" data-seat="14"></li>
+			<li data-status="empty" data-seat="16"></li>
+			<li data-status="empty" data-seat="18"></li>
+			<li data-status="empty" data-seat="20"></li>
+			<li data-status="empty" data-seat="22"></li>
+			<li data-status="empty" data-seat="24"></li>
+			<li data-status="empty" data-seat="26"></li>
+			<li data-status="empty" data-seat="28"></li>
 		</ul>
 		<ul class="row" data-row="D">
-			<li class="null"></li>
-			<li class="empty" data-seat="1"></li>
-			<li class="empty" data-seat="3"></li>
-			<li class="empty" data-seat="5"></li>
-			<li class="empty" data-seat="7"></li>
-			<li class="empty" data-seat="9"></li>
-			<li class="empty" data-seat="11"></li>
-			<li class="empty" data-seat="13"></li>
-			<li class="empty" data-seat="15"></li>
-			<li class="empty" data-seat="17"></li>
-			<li class="empty" data-seat="19"></li>
-			<li class="empty" data-seat="21"></li>
-			<li class="empty" data-seat="23"></li>
-			<li class="empty" data-seat="25"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="empty" data-seat="2"></li>
-			<li class="empty" data-seat="4"></li>
-			<li class="empty" data-seat="6"></li>
-			<li class="empty" data-seat="8"></li>
-			<li class="empty" data-seat="10"></li>
-			<li class="empty" data-seat="12"></li>
-			<li class="empty" data-seat="14"></li>
-			<li class="empty" data-seat="16"></li>
-			<li class="empty" data-seat="18"></li>
-			<li class="empty" data-seat="20"></li>
-			<li class="empty" data-seat="22"></li>
-			<li class="empty" data-seat="24"></li>
-			<li class="empty" data-seat="26"></li>
-			<li class="null"></li>
+			<li data-status="null"></li>
+			<li data-status="empty" data-seat="1"></li>
+			<li data-status="empty" data-seat="3"></li>
+			<li data-status="empty" data-seat="5"></li>
+			<li data-status="empty" data-seat="7"></li>
+			<li data-status="empty" data-seat="9"></li>
+			<li data-status="empty" data-seat="11"></li>
+			<li data-status="empty" data-seat="13"></li>
+			<li data-status="empty" data-seat="15"></li>
+			<li data-status="empty" data-seat="17"></li>
+			<li data-status="empty" data-seat="19"></li>
+			<li data-status="empty" data-seat="21"></li>
+			<li data-status="empty" data-seat="23"></li>
+			<li data-status="empty" data-seat="25"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="empty" data-seat="2"></li>
+			<li data-status="empty" data-seat="4"></li>
+			<li data-status="empty" data-seat="6"></li>
+			<li data-status="empty" data-seat="8"></li>
+			<li data-status="empty" data-seat="10"></li>
+			<li data-status="empty" data-seat="12"></li>
+			<li data-status="empty" data-seat="14"></li>
+			<li data-status="empty" data-seat="16"></li>
+			<li data-status="empty" data-seat="18"></li>
+			<li data-status="empty" data-seat="20"></li>
+			<li data-status="empty" data-seat="22"></li>
+			<li data-status="empty" data-seat="24"></li>
+			<li data-status="empty" data-seat="26"></li>
+			<li data-status="null"></li>
 		</ul>
 		<ul class="row" data-row="C">
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="empty" data-seat="1"></li>
-			<li class="empty" data-seat="2"></li>
-			<li class="empty" data-seat="3"></li>
-			<li class="empty" data-seat="4"></li>
-			<li class="empty" data-seat="5"></li>
-			<li class="empty" data-seat="6"></li>
-			<li class="empty" data-seat="7"></li>
-			<li class="empty" data-seat="8"></li>
-			<li class="empty" data-seat="9"></li>
-			<li class="empty" data-seat="10"></li>
-			<li class="empty" data-seat="11"></li>
-			<li class="empty" data-seat="12"></li>
-			<li class="empty" data-seat="13"></li>
-			<li class="empty" data-seat="14"></li>
-			<li class="empty" data-seat="15"></li>
-			<li class="empty" data-seat="16"></li>
-			<li class="empty" data-seat="17"></li>
-			<li class="empty" data-seat="18"></li>
-			<li class="empty" data-seat="19"></li>
-			<li class="empty" data-seat="20"></li>
-			<li class="empty" data-seat="21"></li>
-			<li class="empty" data-seat="22"></li>
-			<li class="empty" data-seat="23"></li>
-			<li class="empty" data-seat="24"></li>
-			<li class="empty" data-seat="25"></li>
-			<li class="empty" data-seat="26"></li>
-			<li class="null"></li>
-			<li class="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="empty" data-seat="1"></li>
+			<li data-status="empty" data-seat="2"></li>
+			<li data-status="empty" data-seat="3"></li>
+			<li data-status="empty" data-seat="4"></li>
+			<li data-status="empty" data-seat="5"></li>
+			<li data-status="empty" data-seat="6"></li>
+			<li data-status="empty" data-seat="7"></li>
+			<li data-status="empty" data-seat="8"></li>
+			<li data-status="empty" data-seat="9"></li>
+			<li data-status="empty" data-seat="10"></li>
+			<li data-status="empty" data-seat="11"></li>
+			<li data-status="empty" data-seat="12"></li>
+			<li data-status="empty" data-seat="13"></li>
+			<li data-status="empty" data-seat="14"></li>
+			<li data-status="empty" data-seat="15"></li>
+			<li data-status="empty" data-seat="16"></li>
+			<li data-status="empty" data-seat="17"></li>
+			<li data-status="empty" data-seat="18"></li>
+			<li data-status="empty" data-seat="19"></li>
+			<li data-status="empty" data-seat="20"></li>
+			<li data-status="empty" data-seat="21"></li>
+			<li data-status="empty" data-seat="22"></li>
+			<li data-status="empty" data-seat="23"></li>
+			<li data-status="empty" data-seat="24"></li>
+			<li data-status="empty" data-seat="25"></li>
+			<li data-status="empty" data-seat="26"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
 		</ul>
 		<ul class="row" data-row="B">
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="empty" data-seat="1"></li>
-			<li class="empty" data-seat="2"></li>
-			<li class="empty" data-seat="3"></li>
-			<li class="empty" data-seat="4"></li>
-			<li class="empty" data-seat="5"></li>
-			<li class="empty" data-seat="6"></li>
-			<li class="empty" data-seat="7"></li>
-			<li class="empty" data-seat="8"></li>
-			<li class="empty" data-seat="9"></li>
-			<li class="empty" data-seat="10"></li>
-			<li class="empty" data-seat="11"></li>
-			<li class="empty" data-seat="12"></li>
-			<li class="empty" data-seat="13"></li>
-			<li class="empty" data-seat="14"></li>
-			<li class="empty" data-seat="15"></li>
-			<li class="empty" data-seat="16"></li>
-			<li class="empty" data-seat="17"></li>
-			<li class="empty" data-seat="18"></li>
-			<li class="empty" data-seat="19"></li>
-			<li class="empty" data-seat="20"></li>
-			<li class="empty" data-seat="21"></li>
-			<li class="empty" data-seat="22"></li>
-			<li class="empty" data-seat="23"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="empty" data-seat="1"></li>
+			<li data-status="empty" data-seat="2"></li>
+			<li data-status="empty" data-seat="3"></li>
+			<li data-status="empty" data-seat="4"></li>
+			<li data-status="empty" data-seat="5"></li>
+			<li data-status="empty" data-seat="6"></li>
+			<li data-status="empty" data-seat="7"></li>
+			<li data-status="empty" data-seat="8"></li>
+			<li data-status="empty" data-seat="9"></li>
+			<li data-status="empty" data-seat="10"></li>
+			<li data-status="empty" data-seat="11"></li>
+			<li data-status="empty" data-seat="12"></li>
+			<li data-status="empty" data-seat="13"></li>
+			<li data-status="empty" data-seat="14"></li>
+			<li data-status="empty" data-seat="15"></li>
+			<li data-status="empty" data-seat="16"></li>
+			<li data-status="empty" data-seat="17"></li>
+			<li data-status="empty" data-seat="18"></li>
+			<li data-status="empty" data-seat="19"></li>
+			<li data-status="empty" data-seat="20"></li>
+			<li data-status="empty" data-seat="21"></li>
+			<li data-status="empty" data-seat="22"></li>
+			<li data-status="empty" data-seat="23"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
 		</ul>
 		<ul class="row" data-row="A">
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="empty" data-seat="1"></li>
-			<li class="empty" data-seat="2"></li>
-			<li class="empty" data-seat="3"></li>
-			<li class="empty" data-seat="4"></li>
-			<li class="empty" data-seat="5"></li>
-			<li class="empty" data-seat="6"></li>
-			<li class="empty" data-seat="7"></li>
-			<li class="empty" data-seat="8"></li>
-			<li class="empty" data-seat="9"></li>
-			<li class="empty" data-seat="10"></li>
-			<li class="empty" data-seat="11"></li>
-			<li class="empty" data-seat="12"></li>
-			<li class="empty" data-seat="13"></li>
-			<li class="empty" data-seat="14"></li>
-			<li class="empty" data-seat="15"></li>
-			<li class="empty" data-seat="16"></li>
-			<li class="empty" data-seat="17"></li>
-			<li class="empty" data-seat="18"></li>
-			<li class="empty" data-seat="19"></li>
-			<li class="empty" data-seat="20"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
-			<li class="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="empty" data-seat="1"></li>
+			<li data-status="empty" data-seat="2"></li>
+			<li data-status="empty" data-seat="3"></li>
+			<li data-status="empty" data-seat="4"></li>
+			<li data-status="empty" data-seat="5"></li>
+			<li data-status="empty" data-seat="6"></li>
+			<li data-status="empty" data-seat="7"></li>
+			<li data-status="empty" data-seat="8"></li>
+			<li data-status="empty" data-seat="9"></li>
+			<li data-status="empty" data-seat="10"></li>
+			<li data-status="empty" data-seat="11"></li>
+			<li data-status="empty" data-seat="12"></li>
+			<li data-status="empty" data-seat="13"></li>
+			<li data-status="empty" data-seat="14"></li>
+			<li data-status="empty" data-seat="15"></li>
+			<li data-status="empty" data-seat="16"></li>
+			<li data-status="empty" data-seat="17"></li>
+			<li data-status="empty" data-seat="18"></li>
+			<li data-status="empty" data-seat="19"></li>
+			<li data-status="empty" data-seat="20"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
+			<li data-status="null"></li>
 		</ul>
 		<div class="stage">Stage</div>
 		<div class="control-menu">
