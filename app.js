@@ -13,10 +13,8 @@ var express = require('express'),
 	server = http.createServer(app),
 	io = require('socket.io').listen(server),
 	passport = require('passport'),
-	passportSocketIo = require("passport.socketio"),
-	MemoryStore = express.session.MemoryStore,
-	sessionStore = new MemoryStore(),
 	LocalStrategy = require('passport-local').Strategy,
+	user = null,
 	admins = [{
 		id: 1,
 		username: 'ok',
@@ -114,9 +112,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.bodyParser());
 
 app.use(express.session({
-	store: sessionStore,
-	secret: 'secret',
-	key: process.env.SECRET || 'thisissosecretevenidontknowit'
+	secret: process.env.SECRET || 'thisissosecretevenidontknowit'
 }));
 
 app.use(flash());
@@ -130,6 +126,7 @@ app.use(app.router);
 
 
 app.get('/', function(req, res) {
+	user = req.user;
 	res.render('index', {
 		user: req.user,
 		message: req.flash('error')
@@ -193,59 +190,28 @@ function clearReservations() {
 
 clearReservations();
 setInterval(clearReservations, 60000);
-var general = io
-	.of('/sockets/general')
-	.on('connection', function(socket) {
-		socket.emit('a message', {
-			that: 'only',
-			'/chat': 'will get'
-		});
-		chat.emit('a message', {
-			everyone: 'in',
-			'/chat': 'will get'
-		});
-	});
-
-var admin = io
-	.of('/sockets/admin')
-	.authorization(passportSocketIo.authorize({
-		key: 'express.sid', //the cookie where express (or connect) stores its session id.
-		secret: process.env.SECRET || 'thisissosecretevenidontknowit', //the session secret to parse the cookie
-		store: sessionStore, //the session store that express uses
-		fail: function(data, accept) {
-			// console.log("failed");
-			// console.log(data);// *optional* callbacks on success or fail
-			accept(null, false); // second param takes boolean on whether or not to allow handshake
-		},
-		success: function(data, accept) {
-			//  console.log("success socket.io auth");
-			//   console.log(data);
-			accept(null, true);
-		}
-	}))
-	.on('connection', function(socket) {
-		socket.emit('item', {
-			news: 'item'
-		});
-	});
 
 io.sockets.on('connection', function(socket) {
-
 	socket.on('disconnect', function() {
 		//clear reservations
 	});
 
 	socket.on('updateseat', function(saledata) {
-		var _sale = new Sale(saledata);
-		_sale.save();
+		if (user) {
+			var _sale = new Sale(saledata);
+			_sale.save();
 
-		socket.broadcast.emit('updateseat', saledata);
+			socket.broadcast.emit('updateseat', saledata);
+		}
 	});
 
 	socket.on('deleteseat', function(seat) {
-		if (seat) {
-			Sale.findByIdAndRemove(seat);
-			socket.broadcast.emit('deleteseat', seat);
+		if (user) {
+			if (seat) {
+				Sale.findByIdAndRemove(seat);
+				socket.broadcast.emit('deleteseat', seat);
+			}
+
 		}
 	});
 
