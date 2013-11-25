@@ -180,12 +180,12 @@ server.listen(app.get('port'), function() {
 
 function clearReservations() {
 	console.log('Cleaning reservations...');
-	// Sale.findOneAndRemove({
-	// 	$gt: new Date(ISODate().getTime() - 60000)
-	// }, function(err, docs) {
-	// 	console.log(err);
-	// 	console.log(docs);
-	// });
+	Sale.findOneAndRemove({
+		sold: false
+	}, function(err, docs) {
+		console.log(err);
+		console.log(docs);
+	});
 }
 
 clearReservations();
