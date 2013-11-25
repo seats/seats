@@ -142,7 +142,7 @@ $(function() {
 		$('#stats-bumk').html(data.stats.bumk + ' - ' + incomes.bumk + ' TL');
 		$('#stats-normal').html(data.stats.normal + ' - ' + incomes.normal + ' TL');
 		$('#stats-student').html(data.stats.student + ' - ' + incomes.student + ' TL');
-		$('#stats-total').html(data.stats.total + ' - ' + incomes.bumk + incomes.student + incomes.normal + ' TL');
+		$('#stats-total').html(data.stats.total + ' - ' + Number(Number(incomes.bumk) + Number(incomes.student) + Number(incomes.normal)) + ' TL');
 		markSeats(data.sales);
 	});
 	

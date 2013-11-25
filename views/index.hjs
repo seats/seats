@@ -750,13 +750,13 @@
 				<button class="loose">Return</button>
 			</div>
 			<div class="stats-menu">
-				<div id="stats-bumk" class="stat">
+				<div id="stats-bumk" data-category="bumk" class="stat">
 					
 				</div>
-				<div id="stats-student" class="stat">
+				<div id="stats-student" data-category="student" class="stat">
 					
 				</div>
-				<div id="stats-normal" class="stat">
+				<div id="stats-normal" data-category="normal" class="stat">
 					
 				</div>
 				<div id="stats-total" class="stat"></div>
