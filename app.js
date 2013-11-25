@@ -151,6 +151,8 @@ app.post('/sell', ensureAuthenticated, function(req, res) {
 	});
 
 	seat.save();
+
+	res.send(true);
 	
 });
 

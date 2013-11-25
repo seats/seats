@@ -42,6 +42,7 @@ $(function() {
 		$(this).hide();
 		$('.about-to-sold').each(function() {
 			var $this = $(this);
+			
 			$.ajax({
 				type: "POST",
 				url: '/sell',
