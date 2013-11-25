@@ -81,22 +81,14 @@ strong {
 .null {
   background: white; }
 
-/* line 37, ../scss/screen.scss */
-[data-status="empty"] {
-  background-color: #ffffbe;
-  cursor: pointer; }
-  /* line 11, ../scss/screen.scss */
-  [data-status="empty"]:hover {
-    background-color: #efefce; }
-
-/* line 42, ../scss/screen.scss */
+/* line 38, ../scss/screen.scss */
 [data-status="sold"] {
   background-color: #ff8282; }
   /* line 11, ../scss/screen.scss */
   [data-status="sold"]:hover {
     background-color: #e0a1a1; }
 
-/* line 46, ../scss/screen.scss */
+/* line 42, ../scss/screen.scss */
 [data-category="bumk"] {
   background-color: #ffcaca;
   cursor: pointer; }
@@ -104,7 +96,7 @@ strong {
   [data-category="bumk"]:hover {
     background-color: #f2d7d7; }
 
-/* line 51, ../scss/screen.scss */
+/* line 47, ../scss/screen.scss */
 [data-category="student"] {
   background-color: #ff6464;
   cursor: pointer;
@@ -113,7 +105,7 @@ strong {
   [data-category="student"]:hover {
     background-color: #d88b8b; }
 
-/* line 57, ../scss/screen.scss */
+/* line 53, ../scss/screen.scss */
 [data-category="normal"] {
   background-color: #ff2828;
   cursor: pointer; }
@@ -121,23 +113,34 @@ strong {
   [data-category="normal"]:hover {
     background-color: #c95e5e; }
 
-/* line 62, ../scss/screen.scss */
+/* line 58, ../scss/screen.scss */
+[data-status="empty"] {
+  background-color: #ffffbe;
+  cursor: pointer;
+  color: #333; }
+  /* line 11, ../scss/screen.scss */
+  [data-status="empty"]:hover {
+    background-color: #efefce; }
+
+/* line 64, ../scss/screen.scss */
 [data-status="presold"] {
   background-color: #8bff8b;
-  cursor: pointer; }
+  cursor: pointer;
+  color: #333; }
   /* line 11, ../scss/screen.scss */
   [data-status="presold"]:hover {
     background-color: #a8e2a8; }
 
-/* line 67, ../scss/screen.scss */
+/* line 70, ../scss/screen.scss */
 [data-status="prereturn"] {
   background-color: orange;
-  cursor: pointer; }
+  cursor: pointer;
+  color: #333; }
   /* line 11, ../scss/screen.scss */
   [data-status="prereturn"]:hover {
     background-color: #bf9240; }
 
-/* line 72, ../scss/screen.scss */
+/* line 76, ../scss/screen.scss */
 li {
   cursor: pointer;
   width: 3%;
@@ -147,29 +150,29 @@ li {
   text-align: center;
   font-size: 12px;
   color: #333; }
-  /* line 81, ../scss/screen.scss */
+  /* line 85, ../scss/screen.scss */
   li[data-status="null"] {
     border: 1px solid white; }
-  /* line 84, ../scss/screen.scss */
+  /* line 88, ../scss/screen.scss */
   li:not([data-status="null"]) {
     border: 1px solid #ff8282; }
 
-/* line 90, ../scss/screen.scss */
+/* line 94, ../scss/screen.scss */
 .control-menu, .stats-menu {
   position: absolute;
   top: 20px;
   left: 45%; }
 
-/* line 95, ../scss/screen.scss */
+/* line 99, ../scss/screen.scss */
 .stats-menu {
   top: 310px;
   left: 46%; }
 
-/* line 99, ../scss/screen.scss */
+/* line 103, ../scss/screen.scss */
 .stat {
   padding: 5px; }
 
-/* line 102, ../scss/screen.scss */
+/* line 106, ../scss/screen.scss */
 .info-card {
   position: absolute;
   top: 197px;
@@ -180,19 +183,23 @@ li {
   padding: 10px;
   display: none; }
 
-/* line 113, ../scss/screen.scss */
+/* line 117, ../scss/screen.scss */
 .sell, .loose {
   display: none; }
 
-/* line 117, ../scss/screen.scss */
+/* line 121, ../scss/screen.scss */
 .loose {
   top: 50px; }
 
-/* line 120, ../scss/screen.scss */
+/* line 124, ../scss/screen.scss */
 .ticket-types {
   display: none; }
+  /* line 126, ../scss/screen.scss */
+  .ticket-types label {
+    display: block;
+    padding: 5px; }
 
-/* line 123, ../scss/screen.scss */
+/* line 131, ../scss/screen.scss */
 .stage {
   width: 100%;
   margin-top: 50px;

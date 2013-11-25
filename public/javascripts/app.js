@@ -71,6 +71,8 @@ $(function() {
 					seat: $this.html()
 				});
 				$(this).attr("data-status", "empty");
+				$(this).removeAttr("data-category");
+				$(this).removeAttr("data-seller");
 			});
 		});
 

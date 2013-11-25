@@ -34,10 +34,6 @@ strong{
 	background: white;
 }
 
-[data-status="empty"] {
-	@include colorize(rgb(255,255,190));
-	cursor: pointer;
-}
 
 [data-status="sold"] {
 	@include colorize(rgb(255,130,130));
@@ -59,14 +55,22 @@ strong{
 	cursor: pointer;
 }
 
+[data-status="empty"] {
+	@include colorize(rgb(255,255,190));
+	cursor: pointer;
+	color:#333;
+}
+
 [data-status="presold"] {
 	@include colorize(darken(#BEFFBE, 10%));
 	cursor: pointer;
+	color:#333;
 }
 
 [data-status="prereturn"] {
 	@include colorize(orange);
 	cursor: pointer;
+	color:#333;
 }
 
 li{
@@ -118,7 +122,11 @@ li{
 	top: 50px;
 }
 .ticket-types{
-	display: none
+	display: none;
+	label{
+		display: block;
+		padding: 5px;
+	}
 }
 .stage{
 	width: 100%;
