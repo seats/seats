@@ -36,6 +36,8 @@ $(function() {
 				}
 			} else if ($this.attr("data-status") === "presold") {
 				$(this).attr("data-status", "empty");
+				$(this).removeAttr("data-seller");
+				$(this).removeAttr("data-category");
 			} else if ($this.attr("data-status") === "prereturn") {
 				$(this).attr("data-status", "sold");
 			}
