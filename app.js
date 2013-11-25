@@ -177,12 +177,23 @@ server.listen(app.get('port'), function() {
 });
 
 function clearReservations() {
-	// runs every 60 sec and runs on init.
+	console.log('Cleaning reservations...');
+	// Sale.findOneAndRemove({
+	// 	$gt: new Date(ISODate().getTime() - 60000)
+	// }, function(err, docs) {
+	// 	console.log(err);
+	// 	console.log(docs);
+	// });
 }
+
 clearReservations();
-setInterval(clearReservations, 60 * 1000);
+setInterval(clearReservations, 60000);
 
 io.sockets.on('connection', function(socket) {
+
+	socket.on('disconnect', function() {
+		//clear reservations
+	});
 
 	app.post('/sales', ensureAuthenticated, function(req, res) {
 
@@ -196,7 +207,7 @@ io.sockets.on('connection', function(socket) {
 		var _sale = new Sale(saledata);
 		_sale.save();
 
-		socket.broadcast.emit('updateseat', saledata);
+		socket.emit('updateseat', saledata);
 		res.send(true);
 
 	});
@@ -204,7 +215,7 @@ io.sockets.on('connection', function(socket) {
 	app.delete('/sales', ensureAuthenticated, function(req, res) {
 		if (req.body.seat) {
 			Sale.findByIdAndRemove(req.body.seat);
-			socket.broadcast.emit('deleteseat', req.body.seat);
+			socket.emit('deleteseat', req.body.seat);
 			res.send(true);
 		} else {
 			res.send(500, {
