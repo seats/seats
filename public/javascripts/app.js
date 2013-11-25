@@ -109,8 +109,15 @@ socket.on('connect', function() {
 });
 
 socket.on('updateseat', function(saledata) {
-	console.log(saledata);
+	var li = $("li").filter(function() {
+		return $(this).html() == saledata.seat;
+	});
+	console.log(li);
+//	li.trigger("click");
 });
 socket.on('deleteseat', function(seatname) {
-	console.log(seatname);
+	var li = $("li").filter(function() {
+		return $(this).html() == seatname;
+	});
+//	li.trigger("click");
 });
