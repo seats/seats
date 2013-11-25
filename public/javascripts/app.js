@@ -100,6 +100,8 @@ $(function() {
 					return $(this).html() === item.seat;
 				});
 				li.attr("data-status", (item.sold) ? "sold" : "empty");
+				li.attr("data-date", item.created_at);
+				li.attr("data-seller", item.seller);
 				li.attr("data-category", item.category);
 			});
 		}
@@ -130,9 +132,9 @@ $(function() {
 		markSeat(saledata)
 	});
 
-	socket.on('sales', function(sales){
-		console.log(sales);
-		markSeats(sales);
+	socket.on('initialdata', function(data){
+		console.log(data.stats);
+		markSeats(data.sales);
 	});
 	
 	socket.on('deleteseat', function(seatname) {

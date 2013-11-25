@@ -193,7 +193,21 @@ setInterval(clearReservations, 60000);
 
 io.sockets.on('connection', function(socket) {
 	Sale.find({}, function(err, sales) {
-		socket.emit('sales', sales);
+		stats = {};
+		stats.total = sales.length;
+		stats.bumk = 0;
+		stats.normal = 0;
+		stats.student = 0;
+		for (var i = 0, len = sales.length; i < len; i++) {
+			if (sales[i].category === 'normal') stats.normal + 1;
+			if (sales[i].category === 'bump') stats.bump + 1;
+			if (sales[i].category === 'student') stats.student + 1;
+		}
+
+		socket.emit('initialdata', {
+			sales: sales,
+			stats: stats
+		});
 	});
 
 	socket.on('disconnect', function() {
