@@ -761,7 +761,7 @@
 			<input type="submit" value="Submit"/>
 		</form>
 	{{/user}}
-	{{user}}
+	{{#user}}
 	<h2>Hi, {{ user.username }}, to logout <a href="/logout">click here</a></h2>
 	{{/user}}
 
