@@ -10,13 +10,13 @@ $(function() {
 			var $this = $(this);
 			if ($this.attr("data-status") === "empty") {
 				$(this).attr("data-status", "presold");
+				socket.emit('updateseat', {
+					seat: $this.html(),
+					category: "unknown",
+					seller: seller,
+					sold: false
+				});
 				if ($('li[data-status="presold"]').length) {
-					socket.emit('updateseat', {
-						seat: $this.html(),
-						category: "unknown",
-						seller: seller,
-						sold: false
-					});
 					$('.ticket-types').show();
 					if ($('.ticket-types input').is(':checked')) {
 						$('.sell').show();
@@ -56,7 +56,6 @@ $(function() {
 					"top" : e.pageY + 10,
 					"left" : e.pageX + 10
 				}).show();
-				console.log(e);
 		}).on("mouseleave", function (e) {
 			$(".info-card").hide();
 		});
@@ -86,8 +85,8 @@ $(function() {
 					category: document.querySelector('input[name="ticket-type"]:checked').value,
 					seller: seller,
 					sold: true
-
 				});
+				$(this).attr("data-status", "sold");				
 			});		
 		});
 
@@ -100,6 +99,20 @@ $(function() {
 				li.attr("data-category", item.category);
 			});
 		}
+		function markSeat(saleObj){
+			var li = $("li").filter(function() {
+				return $(this).html() === saleObj.seat;
+			});
+			li.attr("data-status", (saleObj.sold) ? "sold" : "presold");
+			li.attr("data-category", saleObj.category);
+		}
+		function deleteSeat(seat){
+			var li = $("li").filter(function() {
+				return $(this).html() === saleObj.seat;
+			});
+			li.attr("data-status", "empty");
+			li.attr("data-category", "");
+		}
 	}
 
 	var socket = io.connect();
@@ -111,12 +124,14 @@ $(function() {
 		var li = $("li").filter(function() {
 			return $(this).html() == saledata.seat;
 		});
-		li.trigger("click");
+		console.log(saledata);
+		markSeat(saledata)
 	});
+	
 	socket.on('deleteseat', function(seatname) {
 		var li = $("li").filter(function() {
 			return $(this).html() == seatname;
 		});
-		li.trigger("click");
+		deleteSeat(seatname)
 	});
 });
