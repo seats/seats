@@ -50,7 +50,7 @@ $(function() {
 					"<strong>Satış Tarihi: </strong>" + "date",
 					"<br>",
 					"<br>",
-					"<strong>Satıcı: </strong>" + "seller"
+					"<strong>Satıcı: </strong>" + seller
 				].join("")).css({
 					"position" : "absolute",
 					"top" : e.pageY + 10,
@@ -109,7 +109,7 @@ $(function() {
 		}
 		function deleteSeat(seat){
 			var li = $("li").filter(function() {
-				return $(this).html() === saleObj.seat;
+				return $(this).html() === seat;
 			});
 			li.attr("data-status", "empty");
 			li.attr("data-category", "");
@@ -122,10 +122,6 @@ $(function() {
 	});
 
 	socket.on('updateseat', function(saledata) {
-		var li = $("li").filter(function() {
-			return $(this).html() == saledata.seat;
-		});
-		console.log(saledata);
 		markSeat(saledata)
 	});
 	
@@ -133,6 +129,6 @@ $(function() {
 		var li = $("li").filter(function() {
 			return $(this).html() == seatname;
 		});
-		deleteSeat(seatname)
+		deleteSeat(seatname.seat)
 	});
 });
