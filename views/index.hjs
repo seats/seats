@@ -748,6 +748,20 @@
 			<button class="loose">Return</button>
 		</div>
 	</div>
+
+	{{^user}}
+		{{#message}}
+			<p>{{ message }}</p>
+		{{/message}}
+		<form action="/login" method="post">
+			<label>Username:</label>
+			<input type="text" name="username"/><br/>
+			<label>Password:</label>
+			<input type="password" name="password"/>
+			<input type="submit" value="Submit"/>
+		</form>
+	{{/user}}
+
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="/socket.io/socket.io.js"></script>
 	<script src="/javascripts/app.js"></script>
