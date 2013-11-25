@@ -155,7 +155,7 @@ li {
     border: 1px solid white; }
   /* line 88, ../scss/screen.scss */
   li:not([data-status="null"]) {
-    border: 1px solid #ff8282; }
+    border: 1px solid #ffffbe; }
 
 /* line 94, ../scss/screen.scss */
 .control-menu, .stats-menu {

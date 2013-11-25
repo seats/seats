@@ -736,7 +736,7 @@
 			<li data-status="null"></li>
 			<li data-status="null"></li>
 		</ul>
-		<div class="stage">Stage</div>
+		<div class="stage">STAGE</div>
 		{{#user}}
 			<div class="control-menu">
 				<div class="ticket-types">
