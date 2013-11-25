@@ -190,7 +190,7 @@ function clearReservations() {
 
 clearReservations();
 setInterval(clearReservations, 60000);
-
+io.set('transports', ['xhr-polling']);
 io.sockets.on('connection', function(socket) {
 	Sale.find({}, function(err, sales) {
 		stats = {};
