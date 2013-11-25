@@ -207,7 +207,7 @@ io.sockets.on('connection', function(socket) {
 		var _sale = new Sale(saledata);
 		_sale.save();
 
-		socket.emit('updateseat', saledata);
+		socket.broadcast.emit('updateseat', saledata);
 		res.send(true);
 
 	});
@@ -215,7 +215,7 @@ io.sockets.on('connection', function(socket) {
 	app.delete('/sales', ensureAuthenticated, function(req, res) {
 		if (req.body.seat) {
 			Sale.findByIdAndRemove(req.body.seat);
-			socket.emit('deleteseat', req.body.seat);
+			socket.broadcast.emit('deleteseat', req.body.seat);
 			res.send(true);
 		} else {
 			res.send(500, {
