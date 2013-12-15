@@ -136,9 +136,9 @@ $(function() {
 
 	socket.on('initialdata', function(data){
 		var incomes = {};
-		incomes.bumk = data.stats.bumk * 4;
-		incomes.student = data.stats.student * 7;
-		incomes.normal = data.stats.normal * 15;
+		incomes.bumk = data.stats.bumk * 7;
+		incomes.student = data.stats.student * 10;
+		incomes.normal = data.stats.normal * 20;
 		$('#stats-bumk').html(data.stats.bumk + ' - ' + incomes.bumk + ' TL');
 		$('#stats-student').html(data.stats.student + ' - ' + incomes.student + ' TL');
 		$('#stats-normal').html(data.stats.normal + ' - ' + incomes.normal + ' TL');

@@ -50,6 +50,12 @@ strong{
 	color: white;
 }
 
+[data-category="reserved"] {
+	@include colorize(#48f);
+	cursor: pointer;
+	color: white;
+}
+
 [data-category="normal"] {
 	@include colorize(darken(rgb(255,40,40), 0%));
 	cursor: pointer;

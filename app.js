@@ -18,11 +18,11 @@ var express = require('express'),
 	admins = [{
 		id: 1,
 		username: 'ok',
-		password: '123456'
+		password: 'bumk1974'
 	}, {
 		id: 2,
 		username: 'ok2',
-		password: '123456'
+		password: 'bumk1974'
 	}];
 
 app.use(express.cookieParser(process.env.SECRET || 'thisissosecretevenidontknowit'));

@@ -740,9 +740,10 @@
 		{{#user}}
 			<div class="control-menu">
 				<div class="ticket-types">
-					<label data-category="bumk" for="bumk"><input type="radio" name="ticket-type" value="bumk" id="bumk"> BUMK (4TL)</label>
-					<label data-category="student" for="student"><input type="radio" name="ticket-type" value="student" id="student"> Student (7TL)</label>
-					<label data-category="normal" for="normal"><input type="radio" name="ticket-type" value="normal" id="normal"> Normal (15TL)</label>
+					<label data-category="bumk" for="bumk"><input type="radio" name="ticket-type" value="bumk" id="bumk"> BUMK (7TL)</label>
+					<label data-category="student" for="student"><input type="radio" name="ticket-type" value="student" id="student"> Student (10TL)</label>
+					<label data-category="normal" for="normal"><input type="radio" name="ticket-type" value="normal" id="normal"> Normal (20TL)</label>
+					<label data-category="reserved" for="reserved"><input type="radio" name="ticket-type" value="reserved" id="reserved"> Rezerve (0TL)</label>
 				</div>
 					<br>
 				<button class="sell">Sold</button>
@@ -759,6 +760,9 @@
 				<div id="stats-normal" data-category="normal" class="stat">
 					
 				</div>
+				<div id="stats-reserved" data-category="reserved" class="stat">
+					
+				</div>				
 				<div id="stats-total" class="stat"></div>
 			</div>
 		{{/user}}
